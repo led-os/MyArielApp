@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp90"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/navi_list_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_address_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_nav_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/iv_navi_icon"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="南京"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp24" />
+
+            <ImageView
+                android:id="@+id/iv_navi_icon"
+                android:layout_width="@dimen/dp40"
+                android:layout_height="@dimen/dp40"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp5"
+                android:background="@drawable/navi_buttun_naviicon" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rl_address_name">
+
+            <TextView
+                android:id="@+id/tv_nav_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@id/tv_total_distance"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="南京市总统府"
+                android:textColor="#4dffffff"
+                android:textSize="@dimen/sp12" />
+
+            <TextView
+                android:id="@+id/tv_total_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="@dimen/dp5"
+                android:layout_marginTop="0dp"
+                android:text="500m"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp12" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+
+    <TextView
+        android:id="@+id/clear_all"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#4dffffff"
+        android:text="清除历史"
+        android:textSize="@dimen/sp22"
+        android:visibility="gone"/>
+</LinearLayout>

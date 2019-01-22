@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.qinggan.app.arielapp.minor.main.commonui.pullextend.PullExtendLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pull_extend"
+    android:background="#202021"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal">
+
+    <com.qinggan.app.arielapp.minor.main.commonui.pullextend.ExtendListHeader
+        android:id="@+id/extend_header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp200"/>
+
+
+    <RelativeLayout
+        android:id="@+id/c_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/drivermode_bg"
+        android:clickable="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp40"
+            android:layout_marginTop="@dimen/dp16"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <!--<ImageView-->
+                <!--android:layout_width="@dimen/dp20"-->
+                <!--android:layout_height="@dimen/dp20"-->
+                <!--android:layout_marginLeft="@dimen/dp24"-->
+                <!--android:background="@drawable/drivermode_icon_smart"/>-->
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:layout_weight="1"
+                android:layout_marginLeft="@dimen/dp24"
+                android:text="@string/driving_smart_txt"
+                android:textSize="@dimen/sp20"/>
+            <com.qinggan.app.widget.voiceLinePulse.LinePulseView
+                android:id="@+id/wakeup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/dp30" />
+        </LinearLayout>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/intelligence_list"
+            android:layout_marginTop="@dimen/dp66"
+            android:layout_marginBottom="@dimen/dp16"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </android.support.v7.widget.RecyclerView>
+
+    </RelativeLayout>
+</com.qinggan.app.arielapp.minor.main.commonui.pullextend.PullExtendLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_popup_bg">
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="@dimen/dp40"
+        android:layout_height="@dimen/dp5"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp10"
+        android:background="@drawable/shape_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:id="@+id/iv_prset_address"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp200"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/dp33"
+            android:layout_marginTop="@dimen/dp50"
+            android:layout_marginRight="@dimen/dp33"
+            android:src="@drawable/hotel" />
+
+        <TextView
+            android:id="@+id/tv_address_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/dp33"
+            android:layout_marginTop="@dimen/dp20"
+            android:text="Garden Hotel"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp27" />
+
+        <TextView
+            android:id="@+id/tv_address_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_address_name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/dp33"
+            android:layout_marginTop="@dimen/dp20"
+            android:text="世纪大道233号"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp20" />
+
+        <Button
+            android:id="@+id/btn_confirm_dest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_address_detail"
+            android:layout_marginLeft="@dimen/dp33"
+            android:layout_marginTop="@dimen/dp40"
+            android:layout_marginRight="@dimen/dp33"
+            android:background="@drawable/shape_navi_bg"
+            android:text="设置为家"
+            android:textColor="@color/white" />
+    </LinearLayout>
+</RelativeLayout>

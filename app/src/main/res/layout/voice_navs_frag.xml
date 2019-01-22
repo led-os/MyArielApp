@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/voice_navs_root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/voice_nav_layout_margin_top">
+        <View
+            android:layout_width="@dimen/voice_nav_back_bg_width"
+            android:layout_height="@dimen/voice_nav_back_bg_height"
+            android:layout_marginLeft="@dimen/voice_nav_back_bg_left"
+            android:id="@+id/voice_navs_close"
+            />
+        <ImageView
+            android:layout_width="@dimen/voice_nav_back_width"
+            android:layout_height="@dimen/voice_nav_back_height"
+            android:layout_marginLeft="@dimen/voice_nav_back_left"
+            android:background="@drawable/voice_colse"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/voice_navs_title"
+            android:lines="2"
+            android:textSize="@dimen/voice_nav_title_text_size"
+            android:lineSpacingExtra="@dimen/voice_nav_title_text_span"
+            android:textColor="@color/white"
+            android:gravity="center_horizontal"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/voice_nav_list_margin_top"
+        android:layout_marginLeft="@dimen/voice_nav_list_margin_left"
+        android:layout_marginRight="@dimen/voice_nav_list_margin_right"
+        android:orientation="vertical">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/voice_navs_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+
+</LinearLayout>

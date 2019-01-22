@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="@dimen/dp25"
+    android:background="@drawable/name_bg"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/close_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp17"
+        android:layout_marginTop="@dimen/dp17"
+        android:background="@drawable/close2"/>
+
+            <LinearLayout
+                android:id="@+id/search_lay"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginLeft="@dimen/dp17"
+                android:layout_marginRight="@dimen/dp17"
+                android:layout_marginTop="@dimen/dp20"
+                android:layout_height="@dimen/dp50">
+
+                <EditText
+                    android:id="@+id/seach_where"
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left|center_vertical"
+                    android:paddingRight="30dp"
+                    android:textSize="@dimen/sp20"
+                    android:background="@null"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:singleLine="true"
+                    />
+
+                <ImageView
+                    android:id="@+id/search_btn"
+                    android:layout_width="@dimen/dp17"
+                    android:layout_height="@dimen/dp17"
+                    android:src="@drawable/search2"/>
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.4dp"
+                android:layout_marginTop="@dimen/dp4"
+                android:layout_marginLeft="@dimen/dp17"
+                android:background="#BBBBBB"
+                android:layout_marginRight="@dimen/dp17"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/collect_view"
+                android:layout_margin="@dimen/dp16"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp90">
+            </android.support.v7.widget.RecyclerView>
+            <TextView
+                android:id="@+id/ms_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp17"
+                android:layout_marginTop="@dimen/dp4"
+                android:textSize="16dp"
+                android:text="搜索历史"/>
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/history_view"
+                android:layout_marginTop="@dimen/dp8"
+                android:layout_marginLeft="@dimen/dp17"
+                android:layout_marginRight="@dimen/dp17"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </android.support.v7.widget.RecyclerView>
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/poi_view"
+                android:layout_marginTop="@dimen/dp8"
+                android:layout_marginLeft="@dimen/dp17"
+                android:layout_marginRight="@dimen/dp17"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </android.support.v7.widget.RecyclerView>
+</LinearLayout>

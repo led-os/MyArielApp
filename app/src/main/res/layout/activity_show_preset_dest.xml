@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/wechat_inside_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rr_navi_dest_prest"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="13dp"
+        android:background="@drawable/wechat_message_bg">
+
+        <ImageView
+            android:id="@+id/iv_navigation"
+            android:layout_marginTop="@dimen/dp10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/navigation"/>
+
+        <TextView
+            android:id="@+id/tv_dest_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_navigation"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="25dp"
+            android:lineSpacingExtra="20dp"
+            android:text="@string/navi_goto_start"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_dest_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_dest_desc"
+            android:layout_marginTop="10dp"
+            android:textSize="30sp"
+            android:textColor="#ffffff"
+            android:layout_centerHorizontal="true"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_dest_name"
+            android:layout_marginTop="@dimen/dp10"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:textColor="#ffffff"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/dp5"/>
+
+            <TextView
+                android:layout_toRightOf="@+id/tv_distance"
+                android:layout_marginLeft="@dimen/dp5"
+                android:singleLine="true"
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:textColor="#ffffff"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/dp5"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:background="@mipmap/wechat_voice_input_btn" />
+
+        <TextView
+            android:id="@+id/navi_speech_remind_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="27dp"
+            android:layout_marginLeft="15dp"
+            android:gravity="center_vertical"
+            android:text="@string/navi_speak_guide_ok_cancle"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="31dp">
+
+        <Button
+            android:id="@+id/btn_navi_confirm"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="34dp"
+            android:background="@drawable/wechat_send_select" />
+
+        <Button
+            android:id="@+id/btn_navi_cancle"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="34dp"
+            android:background="@drawable/wechat_cancel_recall_select" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/navi_drop_rela"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="6dp"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@mipmap/navi_bg">
+
+    <TextView
+        android:id="@+id/tv_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="@dimen/sp20"
+        android:background="@null"
+        android:layout_marginTop="@dimen/dp30"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:text="试试说\n“回家”“去公司”\n“我要去肯德基广场”\n“附近有什么好吃的”\n “我要去加油站”"/>
+</RelativeLayout>

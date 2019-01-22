@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<selector xmlns:android = "http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true" android:drawable = "@drawable/navi_buttun_sc_pressed" />
+    <!-- 定义按钮默认的图片 -->
+    <item android:drawable = "@drawable/navi_buttun_sc_normal" />
+</selector>

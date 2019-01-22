@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2b2b2b">
+
+    <RelativeLayout
+        android:id="@+id/head_layout"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="13dp"
+        android:layout_marginTop="28dp"
+        android:gravity="center|center_vertical"
+        android:background="@drawable/bg_phone_search_input">
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:src="@drawable/btn_back" />
+        <View
+            android:id="@+id/line_divide_left"
+            android:layout_width="1px"
+            android:layout_height="15dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/btn_back"
+            android:layout_marginLeft="10dp"
+            android:background="#ff4D4D4D" />
+        <TextView
+            android:id="@+id/tv_call_for"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/line_divide_left"
+            android:layout_toLeftOf="@+id/line_divider_right"
+            android:background="@android:color/transparent"
+            android:text="@string/hint_call_for"
+            android:textColor="@color/white"
+            android:maxLength="15"
+            android:singleLine="true"
+            android:textSize="20dp" />
+        <View
+            android:id="@+id/line_divider_right"
+            android:layout_width="1px"
+            android:layout_height="15dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/btn_voice_input"
+            android:layout_marginRight="10dp"
+            android:background="#ff4D4D4D" />
+        <com.qinggan.app.widget.voiceLinePulse.LinePulseView
+            android:id="@+id/btn_voice_input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/all_contacts_call_record_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@+id/head_layout"
+        android:layout_marginTop="23dp"
+        android:gravity="center|center_vertical">
+        <ListView
+            android:id="@+id/all_call_record"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:divider="@null"
+            android:scrollbars="none"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+</RelativeLayout>

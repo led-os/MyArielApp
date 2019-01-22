@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="120dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/test_insert"
+            android:text="insert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/baidumaps" />
+        <Button
+            android:id="@+id/test_delete"
+            android:text="delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_alignParentBottom="true"/>
+
+        <Button
+            android:id="@+id/test_update"
+            android:text="update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_alignParentBottom="true"/>
+
+        <Button
+            android:id="@+id/test_query"
+            android:text="query all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="180sp" />
+    </LinearLayout>
+
+    <!--<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:text="@string/calling"/>
+
+
+    <ImageButton
+        android:id="@+id/btn_hungup_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="180sp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/phone_3" />-->
+
+    <!--<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10sp"
+        android:layout_marginBottom="30sp"
+        android:gravity="left">
+        <ImageView
+            android:id="@+id/iv_voice_input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20sp"
+            android:src="@drawable/search" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/iv_voice_input"
+            android:layout_marginLeft="10dp"
+            android:layout_centerHorizontal="true"
+            android:background="@android:color/transparent"
+            android:hint="@string/hint_call_hungup_prompt"
+            android:maxLength="20"
+            android:singleLine="true"
+            android:textSize="16sp"
+            android:textColor="#01e694"/>
+    </RelativeLayout>-->
+    <!--<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/mask"></RelativeLayout>-->
+</RelativeLayout>
+

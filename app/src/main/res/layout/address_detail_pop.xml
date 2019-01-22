@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_popup_bg_whitebg">
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/shape_popup_bg"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="40dp"
+            android:layout_height="5.33dp"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dp14"
+            android:background="@drawable/shape_line" />
+
+        <TextView
+            android:id="@+id/tv_address_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/line"
+            android:layout_marginLeft="@dimen/dp20"
+            android:layout_marginTop="@dimen/dp34"
+            android:layout_marginRight="@dimen/dp20"
+            android:text="Garden Hotel"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dp26" />
+
+        <TextView
+            android:id="@+id/tv_address_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_address_name"
+            android:layout_marginLeft="@dimen/dp20"
+            android:layout_marginTop="@dimen/dp5"
+            android:layout_marginRight="@dimen/dp20"
+            android:text="世纪大道233号"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dp18" />
+
+        <LinearLayout
+            android:id="@+id/ll_star"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_address_detail"
+            android:layout_marginLeft="@dimen/dp20"
+            android:layout_marginTop="@dimen/dp9"
+            android:layout_marginRight="@dimen/dp20">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/navi_icon_star_1" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/navi_icon_star_1" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/navi_icon_star_1" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/navi_icon_star_1" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/navi_icon_star_2" />
+
+            <TextView
+                android:id="@+id/tv_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:gravity="right"
+                android:text="人均 19.00 元"
+                android:textColor="#FFFFFFFF"
+                android:textSize="@dimen/dp16" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_address"
+            android:layout_width="match_parent"
+            android:layout_height="167dp"
+            android:layout_below="@id/ll_star"
+            android:layout_marginLeft="@dimen/dp33"
+            android:layout_marginTop="@dimen/dp20"
+            android:layout_marginRight="@dimen/dp33"
+            android:src="@drawable/hotel"
+            android:visibility="gone" />
+
+        <com.baidu.mapapi.map.TextureMapView
+            android:id="@+id/map"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp165"
+            android:layout_below="@id/ll_star"
+            android:layout_marginLeft="@dimen/dp20"
+            android:layout_marginTop="@dimen/dp20"
+            android:layout_marginRight="@dimen/dp20" />
+
+        <LinearLayout
+            android:id="@+id/ll_distance_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/map"
+            android:layout_marginLeft="@dimen/dp20"
+            android:layout_marginTop="@dimen/dp15"
+            android:layout_marginRight="@dimen/dp20"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/tv_distance"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_weight="1"
+                android:text="距离 600 m"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dp18" />
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="30分钟"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dp18" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_phone_call"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_distance_time"
+            android:layout_marginLeft="@dimen/dp20"
+            android:layout_marginTop="@dimen/dp17"
+            android:layout_marginRight="@dimen/dp20"
+            android:background="@drawable/shape_navi_bg">
+
+            <ImageView
+                android:id="@+id/iv_phone_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp10"
+                android:src="@drawable/poi_detail_icon_call" />
+
+            <TextView
+                android:id="@+id/tv_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="呼叫订座"
+                android:textColor="#FFFFFFFF"
+                android:textSize="@dimen/dp20" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp20"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="@dimen/dp20"
+        android:layout_marginRight="@dimen/dp20"
+        android:layout_marginBottom="@dimen/dp34">
+
+        <ImageView
+            android:id="@+id/iv_detail_collect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/detail_collect_selector" />
+
+        <ImageView
+            android:id="@+id/iv_detail_navi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/detail_navi_selector" />
+    </RelativeLayout>
+</RelativeLayout>

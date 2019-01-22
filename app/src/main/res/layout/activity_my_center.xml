@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/head_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white_bg_f6"
+    tools:context=".minor.main.mui.MyCenterActivity">
+    <RelativeLayout
+        android:id="@+id/back_btn"
+        android:background="?android:attr/selectableItemBackground"
+        android:layout_width="@dimen/dp60"
+        android:layout_height="@dimen/dp60"
+        android:layout_marginLeft="@dimen/dp8"
+        android:layout_marginTop="@dimen/dp30">
+        <ImageView
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/icon_back"
+            android:textSize="@dimen/dp24" />
+    </RelativeLayout>
+
+            <ImageView
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/person"
+                android:layout_width="@dimen/dp64"
+                android:layout_height="@dimen/dp64"
+                android:layout_centerHorizontal="true"
+                android:src="@mipmap/icon_head_default" />
+
+        <TextView
+            android:id="@+id/login_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dp25"
+            android:gravity="center_vertical"
+            android:text="登录/注册"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp20"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/name_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dp18"
+            android:gravity="center_vertical"
+            android:text="Sara Nash"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp20"
+            android:textStyle="bold" />
+
+    <TextView
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:paddingLeft="14dp"
+        android:paddingRight="14dp"
+        android:background="@drawable/mine_bg_shape"
+        android:id="@+id/num_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dp11"
+        android:gravity="center_vertical"
+        android:text="宝骏530"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp12"
+        android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp47"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:background="?android:attr/selectableItemBackground"
+                android:id="@+id/_mycar"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp53"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/dp30"
+                    android:layout_height="@dimen/dp30"
+                    android:layout_marginLeft="@dimen/dp14"
+                    android:background="@mipmap/home_icon_findcar" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp5"
+                    android:text="我的车辆"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp16" />
+
+                <LinearLayout
+                    android:layout_width="@dimen/dp0"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="right">
+
+                    <TextView
+                        android:id="@+id/car_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/dp5"
+                        android:text="宝骏530"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sp14" />
+
+                    <ImageView
+                        android:layout_marginLeft="12dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@mipmap/icon_more" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/mine_lines_color" />
+
+            <LinearLayout
+                android:background="?android:attr/selectableItemBackground"
+                android:id="@+id/voice_wakeup_lay"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp53"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/dp30"
+                    android:layout_height="@dimen/dp30"
+                    android:layout_marginLeft="@dimen/dp14"
+                    android:background="@mipmap/home_icon_voice" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp5"
+                    android:text="语音唤醒词"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp16" />
+
+                <LinearLayout
+                    android:layout_width="@dimen/dp0"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="right">
+
+                    <TextView
+                        android:id="@+id/wakeup_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/dp5"
+                        android:text="你好，宝骏"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sp14" />
+
+                    <ImageView
+                        android:layout_marginLeft="12dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@mipmap/icon_more" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/white_bg_f6" />
+
+            <LinearLayout
+                android:background="?android:attr/selectableItemBackground"
+                android:id="@+id/offLineMap"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp53"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/dp30"
+                    android:layout_height="@dimen/dp30"
+                    android:layout_marginLeft="@dimen/dp14"
+                    android:background="@mipmap/home_icon_adress" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp5"
+                    android:text="常用地址"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp16" />
+
+                <LinearLayout
+                    android:layout_width="@dimen/dp0"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="right">
+
+                    <ImageView
+                        android:layout_marginLeft="12dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@mipmap/icon_more" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/white_bg_f6" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp53"
+                android:background="?android:attr/selectableItemBackground"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/dp30"
+                    android:layout_height="@dimen/dp30"
+                    android:layout_marginLeft="@dimen/dp14"
+                    android:background="@mipmap/wechat_receive_switch_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp5"
+                    android:text="微信接收"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp16" />
+
+                <LinearLayout
+                    android:layout_width="@dimen/dp0"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="right">
+
+                    <ImageButton
+                        android:id="@+id/wechat_receivie_switch_btn"
+                        android:layout_width="47dp"
+                        android:layout_height="26dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="12dp"
+                        android:background="@drawable/wechat_receive_switch_bg" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/white_bg_f6" />
+
+            <LinearLayout
+                android:background="?android:attr/selectableItemBackground"
+
+                android:id="@+id/about_lay"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp53"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/dp30"
+                    android:layout_height="@dimen/dp30"
+                    android:layout_marginLeft="@dimen/dp14"
+                    android:background="@mipmap/home_icon_about" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp5"
+                    android:text="关于"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp16" />
+
+                <LinearLayout
+                    android:layout_width="@dimen/dp0"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="right">
+
+                    <TextView
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/dp5"
+                        android:text="有新版本1.6.3"
+                        android:textColor="#4FB3FB"
+                        android:textSize="@dimen/sp14" />
+
+                    <ImageView
+                        android:layout_marginLeft="12dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@mipmap/icon_more" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/white_bg_f6" />
+
+
+
+            <LinearLayout
+                android:background="?android:attr/selectableItemBackground"
+                android:id="@+id/test_btn"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp53"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/dp30"
+                    android:layout_height="@dimen/dp30"
+                    android:layout_marginLeft="@dimen/dp14"
+                    android:background="@mipmap/home_icon_findcar" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp5"
+                    android:text="测试界面"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp16" />
+
+                <LinearLayout
+                    android:layout_width="@dimen/dp0"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="right">
+
+                    <ImageView
+                        android:layout_marginLeft="12dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@mipmap/icon_more" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/login_out"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp53"
+            android:layout_marginTop="@dimen/dp20"
+            android:background="@color/white"
+            android:gravity="center">
+
+            <TextView
+                android:gravity="center"
+                android:background="?android:attr/selectableItemBackground"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="退出登录"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp16" />
+        </LinearLayout>
+    </LinearLayout>

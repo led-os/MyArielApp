@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#252525"
+    android:orientation="vertical">
+    <TextView
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/back_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="@dimen/dp24"
+        android:textStyle="bold"
+        android:layout_marginTop="140dp"
+        android:textColor="@android:color/white"
+        android:text="您还没有绑定爱车！"/>
+
+   <Button
+       android:layout_gravity="center_horizontal"
+       android:id="@+id/binding_btn"
+       android:layout_width="@dimen/dp294"
+       android:layout_marginLeft="@dimen/dp32"
+       android:layout_marginTop="140dp"
+       android:layout_marginRight="@dimen/dp32"
+       android:background="@drawable/logbutton"
+       android:text="现在绑定"
+       android:textColor="#ffffff"
+       android:textSize="@dimen/sp20"
+       android:layout_height="52dp" />
+    <Button
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/say_again_btn"
+        android:layout_width="@dimen/dp294"
+        android:layout_marginLeft="@dimen/dp32"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="@dimen/dp32"
+        android:background="@drawable/button_orange"
+        android:text="以后再说"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/sp20"
+        android:layout_height="52dp" />
+</LinearLayout>

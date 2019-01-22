@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_pressed="false" android:state_selected="false"
+        android:drawable="@drawable/driving_mode_s_botton_play"/>
+    <item android:state_pressed="true" android:state_selected="false"
+        android:drawable="@drawable/driving_mode_s_botton_play_press"/>
+
+    <item android:state_pressed="false" android:state_selected="true"
+        android:drawable="@drawable/driving_mode_s_botton_stop"/>
+    <item android:state_pressed="true" android:state_selected="true"
+        android:drawable="@drawable/driving_mode_s_botton_stop_press"/>
+</selector>

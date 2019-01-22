@@ -1,0 +1,1258 @@
+<resources>
+    <string name="app_name">羚机</string>
+    <string name="wake_up_default">我正在听...</string>
+
+    <string name="today">今天</string>
+    <string name="tomorrow">明天</string>
+    <string name="after_tomorrow">后天</string>
+
+    <string name="desc_weather_wind_volume">风力大小</string>
+    <string name="desc_weather_temp">温度</string>
+
+    <string name="distance">相距</string>
+    <string name="status">当前状态:</string>
+
+    <string name="stock_default_code">代码</string>
+    <string name="stock_default_name">名称</string>
+    <string name="stock_default_last_price">现价</string>
+    <string name="stock_default_changein_price">涨跌</string>
+    <string name="stock_default_changein_percentage">涨跌%</string>
+
+    <string name="load_more">正在加载更多...</string>
+    <string name="load_finished">加载完成!</string>
+    <string name="pull_to_refresh">下拉可以刷新</string>
+    <string name="release_to_refresh">释放可以刷新数据</string>
+    <string name="refreshing">正在刷新数据...</string>
+
+    <string name="airtrip_arrive_time">航班到达时间是</string>
+    <string name="airtrip_dept_time">航班出发时间是</string>
+    <string name="airtrip_destination">航班目的地是</string>
+    <string name="airtrip_airline_name">%1$s航班属于%2$s</string>
+    <string name="airtrip_dept">航班出发地是</string>
+    <string name="airtrip_food">航班提供的餐饮是</string>
+    <string name="airtrip_exit">航班的出口是</string>
+    <string name="airtrip_luggage">航班的行李转盘是</string>
+    <string name="airtrip_no_exit">航班未查询到出口</string>
+    <string name="airtrip_no_food">航班未提供餐饮服务</string>
+    <string name="airtrip_no_luggage">航班未查询到行李转盘</string>
+    <string name="airtrip_checkin_num">航班值机柜台是</string>
+    <string name="airtrip_gate">航班登机口是%d号</string>
+    <string name="airtrip_mode">航班机型是</string>
+    <string name="airtrip_baggage_allowance">您的航班限重是%s千克</string>
+    <string name="airtrip_your_flight_no">"您的航班号是%s"</string>
+    <string name="airtrip_dept_terminal">航班出发航站楼是</string>
+    <string name="airtrip_arrive_terminal">航班到达航站楼是</string>
+    <string name="airtrip_airport_temperature">%1$s当前气温%2$s</string>
+    <string name="airtrip_airport_weather">%1$s今天天气%2$s,温度%3$s-%4$s</string>
+    <string name="airtrip_airport_visibility">%1$s能见度%2$s,%3$s</string>
+    <string name="airtrip_air_quality">pm2.5指数%1$s，%2$s</string>
+    <string name="airtrip_your_seat_no">您的座位号是：%s</string>
+    <string name="airtrip_did_not_choose_seat">您还没有选择座位</string>
+    <string name="airtrip_flight_distance">%1$s航班飞行里程是%2$s</string>
+    <string name="airtrip_boarding_time">您的航班登机时间是%1$s</string>
+    <string name="airtrip_empty_alert">抱歉，暂无相关数据</string>
+    <string name="airtrip_flight_position">%1$s航班在%2$s上空</string>
+    <string name="airtrip_specified_flight_position">%1$s航班在%2$s上空</string>
+    <string name="air_Quality">空气质量指数</string>
+    <string name="traffic_condition">限号为</string>
+    <string name="radio_album">专辑</string>
+    <string name="radio_track">节目</string>
+    <string name="search_airtrip">为你查询到以下航班</string>
+    <string name="bluetooth_not_connected">蓝牙未连接</string>
+    <string name="airtrip_not_login">航旅未登录,不能查询个人行程</string>
+    <string name="no_personal_trip">没有个人行程信息</string>
+    <string name="no_boarding_info">没有登机时间信息</string>
+    <string name="no_follow_trip">没有关注行程信息</string>
+    <string name="check_in">值机柜台</string>
+    <string name="volume_up">音量+</string>
+    <string name="volume_down">音量-</string>
+    <string name="volume_out_range">音量超出范围</string>
+    <string name="u_disk_music">u盘音乐</string>
+    <string name="bt_music">蓝牙音乐</string>
+    <string name="online_music">网络音乐</string>
+    <string name="airtrip_detail">航班详情如下</string>
+    <string name="airtrip_your_flight">您的航班</string>
+    <string name="airtrip_your_follow_flight">您关注的航班</string>
+    <string name="airtrip_status_plan">尚未起飞，计划起飞时间为%s</string>
+    <string name="airtrip_status_delay">已延误</string>
+    <string name="airtrip_status_departure">已起飞，起飞时间为%s</string>
+    <string name="airtrip_status_arrived">已到达，实际到达时间为%s</string>
+    <string name="airtrip_status_canceled">已取消</string>
+    <string name="airtrip_status_alternate">已备降</string>
+    <string name="airtrip_status_back">已返航</string>
+    <string name="airtrip_status_none">暂无航班信息</string>
+    <string name="airtrip_status_lost">已失联</string>
+    <string name="airtrip_status_warning">处于预警状态</string>
+    <string name="airtrip_plane_age">%1$s航班机龄是%2$s</string>
+    <string name="airtrip_search_nolist">抱歉，没有找到你需要的航班</string>
+    <string name="airtrip_retry">重试</string>
+
+    <string name="no_audio">暂时没有歌曲了，请稍后再试</string>
+    <string name="request_error">出错了，请稍后再试</string>
+
+    <string name="login_qr_text1">请用航旅纵横APP扫描二维码进行账户绑定</string>
+    <string name="login_qr_text2">非航旅纵横注册用户请先安装航旅纵横APP进行注册</string>
+    <string name="button_settings">设置</string>
+    <string name="button_message">消息中心</string>
+    <string name="button_logout">解绑</string>
+    <string name="login_auth">已认证</string>
+    <string name="login_not_auth">未认证</string>
+    <string name="login_not_login">未登录</string>
+    <string name="login_fail">获取登陆地址失败,请重试</string>
+
+    <string name="seat_select_title">在线选座</string>
+    <string name="seat_select_success">选座成功</string>
+    <string name="seat_select_title2">您选择的座位是</string>
+    <string name="seat_select_title3">您可直接语音说出想选的座位 例如32K，\n前排靠窗</string>
+    <string name="seat_select_ok">确认</string>
+    <string name="seat_title1">可选的</string>
+    <string name="seat_title2">锁定座位</string>
+    <string name="seat_title3">不可选</string>
+    <string name="seat_title4">您的座位</string>
+    <string name="seat_title5">紧急出口</string>
+
+    <string name="air_no_flight">很抱歉, 没有为您找到符合条件的航班动态!</string>
+    <string name="no_plan_fight_text">无相关航班</string>
+    <string name="flight_search_text">航班搜索</string>
+    <string name="bag_turntable">行李转盘</string>
+    <string name="exit_door_num">出口</string>
+    <string name="seartch_by_flight_no">按航班号</string>
+    <string name="seartch_by_flight_city">按城市名</string>
+    <string name="flight_no">航班号</string>
+    <string name="flight_take_off">起飞</string>
+    <string name="flight_landing">降落</string>
+    <string name="flight_date">日期</string>
+    <string name="search_history">搜索历史</string>
+    <string name="mine_login_tips">请用航旅纵横APP扫描二维码进行账户绑定</string>
+    <string name="mine_login_tips_gluid">扫码入口：个人中心-航旅口令-拍口令</string>
+    <string name="mine_login_tips2">非航旅纵横注册用户先安装航旅纵横APP进行注册</string>
+    <string name="no_message">暂无消息</string>
+    <string name="login_out_tips">是否解绑航旅账户</string>
+    <string name="string_yes">确定</string>
+    <string name="string_cancel">取消</string>
+    <string name="search_result">搜索结果</string>
+    <string name="ume_tips">坐飞机用航旅纵横</string>
+    <string name="no_flight_tips">搜索不到符合条件的航班</string>
+    <string name="flight_detail">航班详情</string>
+    <string name="expected">预计</string>
+    <string name="flight_search">航班查询</string>
+    <string name="city_search">航班动态</string>
+    <string name="weather_clear">晴</string>
+    <string name="weather_cloudy">多云</string>
+    <string name="weather_rain">雨</string>
+    <string name="weather_snow">雪</string>
+    <string name="visible">能见度</string>
+    <string name="traffic_normal">流量正常</string>
+    <string name="traffic_small_delay">小面积延误</string>
+    <string name="traffic_large_delay">大面积延误</string>
+    <string name="air_port_flight">架航班</string>
+    <string name="plan_text">计划</string>
+    <string name="boarding_time">登机时间</string>
+    <string name="boarding_port">登机口</string>
+    <string name="seat_number">座位号</string>
+    <string name="no_network_tips">网络连接失败，请稍后再试</string>
+    <string name="x53_no_network_tips">当前网络异常，请稍后再试</string>
+    <string name="card_title">航旅纵横</string>
+    <string name="card_personal_title">最新飞行计划</string>
+    <string name="card_sucscribe_title">最新关注航班</string>
+    <string name="x53_card_notlogin">还未登陆航旅纵横</string>
+    <string name="card_planestatus">计划</string>
+    <string name="netexception">网络异常</string>
+    <string name="cancel_sucscribe_ok">取消关注成功</string>
+    <string name="sucscribe_ok">关注成功</string>
+    <string name="label_all_list">全部歌曲</string>
+    <string name="label_fav_list">我的收藏</string>
+    <string name="label_smart_list">智能歌单</string>
+    <string name="label_local_list">本地歌曲</string>
+    <string name="label_local_fav_list">本地单曲收藏</string>
+    <string name="label_identify_list">听歌识曲</string>
+    <string name="label_usb_list">USB歌曲</string>
+    <string name="label_bluetooth_list">蓝牙歌曲</string>
+    <string name="label_ipod_list">iPod歌曲</string>
+    <string name="label_video_list">视频</string>
+    <string name="label_radio_list">电台歌单</string>
+    <string name="label_netmusic_list">网络歌单</string>
+    <string name="label_nettoday_list">今日歌单</string>
+    <string name="label_net_fav_list">收藏单曲</string>
+    <string name="label_mlt_list">相似歌曲</string>
+    <string name="label_baidu_list">网络音乐</string>
+    <string name="label_aux_list">AUX音乐</string>
+    <string name="label_wechat_list">微信分享</string>
+    <string name="label_search_list">搜索结果</string>
+    <string name="label_ta_mlt_list">相似歌曲</string>
+    <string name="label_ta_title_list">同名歌曲</string>
+    <string name="label_ta_artist_list">听Ta的歌</string>
+    <string name="kuwo_apk_music">酷我音乐</string>
+    <string name="qplay_auto_music">QPlay auto</string>
+    <string name="history_music">历史歌单</string>
+    <string name="default_bluetooth_title">蓝牙音乐</string>
+    <string name="default_aux_title">AUX音乐</string>
+    <string name="music_unmounted">U盘已卸载</string>
+    <string name="music_unread_information">未读取到U盘多媒体信息</string>
+    <string name="music_unread_information2">未读取到本地多媒体信息</string>
+    <string name="music_no_blue">暂无蓝牙音乐</string>
+    <string name="discovery2">风格音乐</string>
+
+    <string name="warning_kwuo_100m">歌曲存放空间已不足，请清理</string>
+    <string name="warning_kwuo_50m">酷我歌曲存放空间已不足，请清理</string>
+    <string name="warning_kwuo_10m">酷我歌曲存放空间已不足，请清理</string>
+    <string name="warning_clear_all">全部清理</string>
+    <string name="warning_file_manager">管理文件</string>
+
+    <!--UIcontrol 全局-->
+    <string name="back">返回</string>
+    <string name="back_to_home">回首页</string>
+    <string name="phone_call_answer">接听</string>
+    <string name="phone_call_answer1">接电话</string>
+    <string name="phone_call_cancel">挂断</string>
+    <string name="phone_call_cancel1">取消</string>
+    <string name="play_media_start">继续播放</string>
+    <string name="play_media_pause">暂停播放</string>
+
+    <!--UIcontrol end-->
+
+    <string name="next_page">下一页</string>
+    <string name="last_page">上一页</string>
+    <string name="confirm">确定</string>
+
+    <string name="CNY">¥</string>
+    <string name="beyond">起</string>
+
+    <string name="get_hotel_detail_failed">获取酒店详情失败！</string>
+    <string name="reserve">预订</string>
+    <string name="check_in_hotel">入住</string>
+    <string name="check_out_hotel">离店</string>
+    <string name="total">共</string>
+    <string name="night">晚</string>
+    <string name="buy">购买</string>
+    <string name="month">月</string>
+    <string name="date">日</string>
+    <string name="number">号</string>
+    <string name="hotel_date">日期</string>
+    <string name="hotel_room">房型</string>
+    <string name="hotel_price">价格</string>
+    <string name="hotel_pay">支付方式</string>
+    <string name="date_select_tips">入住和离店日期间隔在7天内才可手动选择！</string>
+    <string name="do_not_get_url">未获取到URL!</string>
+    <string name="reserve_hotel_success">恭喜您预定成功%1$s%2$s,入住时间%3$s,预定房间保留至18:00</string>
+    <string name="hotel_order_check_in_time">好的,您的入住时间是?</string>
+    <string name="hotel_order_check_out_time">好的,您准备哪天离店?</string>
+    <string name="hotel_order_room">好的,请选择您要的房型</string>
+    <string name="hotel_order_confirm_underline">好的,本次%1$s%2$s,确定预定吗?</string>
+    <string name="hotel_order_confirm_online">好的,%1$s%2$s,%3$s入住%4$s晚,合计%5$s元,现在支付吗?</string>
+    <string name="score">分</string>
+
+    <string name="hotel_total">(共</string>
+    <string name="hotel_night">晚)</string>
+
+    <string name="one_room">  1间</string>
+    <string name="credit_card_guarantee">信用卡担保</string>
+    <string name="credit_card_guarantee_demo">招商银行 **** 4372</string>
+    <string name="guarantee">担保</string>
+    <string name="pay_online">在线支付</string>
+    <string name="pay">支付</string>
+    <string name="pay_offline">到店支付</string>
+    <string name="order_confirm">订单确认</string>
+    <string name="pay_as_alipay">请打开支付宝扫码支付</string>
+    <string name="pay_as_wechat">请用微信扫一扫完成信用卡担保</string>
+    <string name="order_failed">很抱歉预订失败，请重试！</string>
+
+    <!--Nav detail fragment-->
+    <string name="nav_list_price_end">元</string>
+    <string name="nav_detail_price_end">元/人</string>
+    <string name="nav_list_distance_end">公里</string>
+    <string name="stock_code">上证指数（%s）</string>
+    <string name="goto_pay">去支付</string>
+    <string name="order_pay_confirm">确认</string>
+    <string name="click_to_refresh">点击可刷新</string>
+
+    <string name="dot">.&#160;</string>
+
+    <string name="speak_to_pay">请使用支付宝扫码支付</string>
+    <string name="speak_confirm_pay">恭喜您预订成功%1$s%2$s,您可以使用携程关注预订结果</string>
+    <string name="room_pay_online">在线付</string>
+    <string name="room_pay_offline">到店付</string>
+    <string name="room_pay_credit">担保付</string>
+
+    <string name="error_list">很抱歉, 没有为您找到符合条件的结果</string>
+    <string name="not_support_reserve">暂不支持预定</string>
+    <string name="list_result">为您查到如下结果,请选择</string>
+    <string name="room_not_reserve">选择的房型不支持预定</string>
+
+    <string name="text_result">为您查到如下结果</string>
+    <string name="check_out_hotel_error">请重新选择离店时间</string>
+
+    <string name="error_tel">电话号码为空</string>
+
+    <!--phone-->
+    <string name="recent_call">最近通话</string>
+    <string name="recent_favour_contacts">最近重要联系人</string>
+    <string name="hint_call_for">给谁打电话？</string>
+    <string name="call_tag">拨打电话</string>
+    <string name="call_try_to_say">试试说</string>
+    <string name="call_prompt1">”给刘德华打电话“</string>
+    <string name="call_prompt2">“拨打10086“</string>
+    <string name="call_prompt3">“打电话给招商银行“</string>
+    <string name="hint_call_prompt">你可以说给某某打电话</string>
+    <string name="hint_call_hungup_prompt">你可以说取消或者挂断</string>
+    <string name="calling">正在呼叫...</string>
+    <string name="callin_voice_prompt">试试说：接听、挂断</string>
+    <string name="callin_voice_hangup">挂断</string>
+    <string name="callin_voice_hangup2">挂断电话</string>
+    <string name="callin_voice_accept">接听</string>
+    <string name="callin_voice_accept2">接听电话</string>
+    <string name="incall_speaker">手机外放</string>
+    <string name="incall_earphone">手机听筒</string>
+    <string name="incall_car_speaker">车内外放</string>
+    <string name="incall_keybroad">数字键盘</string>
+    <string name="phone_incoming_call">来电中</string>
+    <string name="phone_out_call">正在呼叫</string>
+    <string name="phone_search_contacts">搜索联系人</string>
+    <string name="phone_voice_select_item">请说第几个，或手动选择</string>
+    <string name="phone_voice_select_timeout">超时将自动选择第一个</string>
+    <string name="phone_hint_call_for_voice">您想打给谁？</string>
+    <string name="phone_hint_call_which_one">打给第几个？</string>
+    <string name="phone_back1">返回</string>
+    <string name="phone_back2">退出</string>
+    <string name="phone_back3">关闭</string>
+    <string name="phone_back4">退出电话</string>
+    <string name="phone_back5">关闭电话</string>
+    <string name="phone_first">第一个</string>
+    <string name="phone_second">第二个</string>
+    <string name="phone_third">第三个</string>
+    <string name="phone_fourth">第四个</string>
+    <string name="phone_five">第五个</string>
+    <string name="phone_six">第六个</string>
+    <string name="phone_seven">第七个</string>
+    <string name="phone_eight">第八个</string>
+    <string name="phone_sim_error">拨号失败，SIM卡异常。</string>
+
+
+    <!--vehiclecontrol start-->
+
+    <string name="cold_mode_open">空调降温已打开，温度已设置到最低</string>
+    <string name="warm_mode_open">空调制暖、座椅加热已打开</string>
+    <string name="pm_mode_open">已为您开启空气净化</string>
+    <string name="park_mode_open">10秒后为你关闭车窗、天窗、空调、雨刮，请勿靠近车窗、天窗~</string>
+    <string name="park_mode_text">将为您关闭车窗、天窗、空调和雨刮，请勿将手、头等伸出窗外！~</string>
+    <string name="baby_mode_open">空调已调至宝宝舒适模式，多媒体声音已降低</string>
+    <string name="smoke_mode_open">空气净化、车内通风已开启</string>
+    <string name="snow_mode_open">近光灯、前雾灯、前除霜已开启，雨雪天气注意安全~</string>
+    <string name="romantic_mode_open">氛围灯、音乐已就位，开启浪漫之旅吧~</string>
+
+    <string name="continue_miles_ressure">当前%1$s还能续航%2$s公里</string>
+    <string name="oil_remain_ressure">当前油量还剩百分之%s</string>
+    <string name="power_remain_ressure">当前电量还剩百分之%s</string>
+    <string name="continue_miles_ressurtwo">续航%s公里</string>
+    <string name="total_miles_ressure">你的车总行驶里程数是%s公里</string>
+    <string name="oil_consumption_ressure">现在油耗%sL/km</string>
+    <string name="oil_consumption">油耗</string>
+    <string name="power_consumption_ressure">查询平均电耗是%skw/h</string>
+    <string name="power_consumption">电耗</string>
+    <string name="maintain_time_ressure">下次保养里程数是%skm</string>
+    <string name="no_access_to_maintenance_mileage">未获取到保养里程</string>
+    <string name="tire_warning_status">当前胎压正常</string>
+    <string name="tire_warning_status_err">%s轮胎压不足，请尽快更换备胎，注意安全</string>
+    <string name="air_condition_pm">PM2.5%s</string>
+    <string name="not_power_condition_pm">不支持查询电耗</string>
+    <string name="not_oil_condition_pm">不支持查询油耗</string>
+    <string name="not_power_condition_pm_two">查不到剩余电量，你可以问我剩余油量</string>
+
+    <string name="smart_mode_smog">已为您开启空气净化</string>
+    <string name="smart_mode_warm">空调制暖、座椅加热已打开</string>
+    <string name="smart_mode_cool">空调降温已打开，温度已设置到最低</string>
+    <string name="smart_mode_snow">近光灯、前雾灯、前除霜已开启，雨雪天气注意安全~</string>
+    <string name="smart_mode_romantic">氛围灯、音乐已就位，开启浪漫之旅吧~</string>
+    <string name="smart_mode_baby">空调已调至宝宝舒适模式，多媒体声音已降低</string>
+    <string name="smart_mode_smoke">空气净化、车内通风已开启</string>
+    <string name="smart_mode_stop">10秒后为你关闭车窗、天窗、空调、雨刮，请勿靠近车窗、天窗~</string>
+    <string name="smart_mode_stop_close1">停车模式已取消</string>
+    <string name="smart_mode_stop_close2">暂不支持此功能~</string>
+
+    <string name="smart_mode_smog_closed">净化雾霾已关闭</string>
+    <string name="smart_mode_warm_closed">一键温暖模式已关闭</string>
+    <string name="smart_mode_cool_closed">快速降温模式已关闭</string>
+    <string name="smart_mode_snow_closed">雨雪模式已关闭</string>
+    <string name="smart_mode_romantic_closed">浪漫模式已关闭</string>
+    <string name="smart_mode_baby_closed">呵护宝宝模式已关闭</string>
+    <string name="smart_mode_smoke_closed">抽烟模式已关闭</string>
+    <string name="smart_mode_stop_closed">停车模式为一次性指令，不可点击关闭</string>
+
+    <string name="ambient_lamp_red">车内氛围灯设置为红色</string>
+    <string name="ambient_lamp_purple">车内氛围灯设置为粉紫色</string>
+    <string name="ambient_lamp_golden">车内氛围灯设置为金色</string>
+    <string name="ambient_lamp_orange">车内氛围灯设置为橙色</string>
+    <string name="ambient_lamp_blue">车内氛围灯设置为冰蓝色</string>
+    <string name="ambient_lamp_white">车内氛围灯设置为白色</string>
+    <string name="ambient_lamp_green">车内氛围灯设置为冰绿色</string>
+    <string name="oil_quantity_hint">请先启动发动机，再尝试查询</string>
+    <string name="accoff_hint">电源为ON档才能进行语音控制</string>
+    <string name="voice_control_sunroof_hint">请先打开语音控制天窗开关</string>
+    <string name="voice_control_trunk_hint">请先打开电动尾门控制开关</string>
+    <string name="temperature_max_already">空调已是最高温度</string>
+    <string name="temperature_min_already">空调已是最低温度</string>
+    <string name="wind_max_already">空调已是最大风量</string>
+    <string name="wind_min_already">空调已是最小风量</string>
+    <string name="wind_max">风量已调至最大</string>
+    <string name="wind_min">风量已调至最小</string>
+    <string name="tem_max">温度已调至最大</string>
+    <string name="tem_min">温度已调至最小</string>
+    <string name="wind_set">风量已设置为</string>
+    <string name="wind_level">级</string>
+    <string name="wind">风量</string>
+    <string name="temperature">温度</string>
+    <string name="temperature_unit">%s℃</string>
+    <string name="inner_car_circle_open">车内循环开启</string>
+    <string name="out_car_circle_open">车外循环开启</string>
+    <string name="front_defrost_open">前窗吹风开启</string>
+    <string name="front_defrost_close">前窗吹风关闭</string>
+    <string name="back_defrost_open">后窗吹风开启</string>
+    <string name="auto_open">自动空调开启</string>
+    <string name="air_condition_open">空调开启</string>
+    <string name="air_condition_close">空调关闭</string>
+    <string name="wind_mode_head">出风模式切换为吹头</string>
+    <string name="wind_mode_head_foot">出风模式切换为吹头和脚</string>
+    <string name="wind_mode_foot">出风模式切换为吹脚</string>
+    <string name="wind_mode_window_foot">出风模式切换为吹窗吹脚</string>
+
+    <string name="window_opened">正在打开车窗</string>
+    <string name="window_closed">正在关闭车窗，请注意安全</string>
+    <string name="window_down">窗正在打开</string>
+    <string name="window_up">窗正在关闭，请注意安全</string>
+    <string name="sunroof_opened">正在开启天窗</string>
+    <string name="sunroof_closed">即将关闭天窗</string>
+    <string name="sunroof_shade_opened">正在打开遮阳帘</string>
+    <string name="sunroof_shade_closed">即将关闭遮阳帘</string>
+    <string name="seatheat_opened">座椅加热已打开</string>
+    <string name="seatheat_closed">座椅加热已关闭</string>
+    <string name="sunroof_tilt">正在翘起天窗</string>
+    <string name="sunroof_open_little">天窗已打开一点</string>
+    <string name="sunroof_close_little">天窗已关闭一点</string>
+    <string name="sunroof_open_half">天窗已打开一半</string>
+    <string name="sunroof_close_half">天窗已关闭一半</string>
+    <string name="sunroof_close_already">当前天窗已经完全关闭</string>
+    <string name="sunroof_open_already">当前天窗已经完全打开</string>
+    <string name="sunroof_half_already">当前天窗已经打开一半</string>
+    <string name="air_condition_opened">空调已打开</string>
+    <string name="air_condition_closed">空调已关闭</string>
+    <string name="auto_opened">空调自动模式已打开</string>
+    <string name="cool_opened">已将温度调节到22度</string>
+    <string name="hot_opened">已将温度调节到26度</string>
+    <string name="auto_closed">空调自动模式已关闭</string>
+    <string name="temperature_upped">温度已调高</string>
+    <string name="temperature_downed">温度已调低</string>
+    <string name="temperature_set">温度已设置为</string>
+    <string name="temperature_set_unit">度</string>
+    <string name="wind_upped">风量已调高</string>
+    <string name="wind_downed">风量已调低</string>
+    <string name="inner_circle_opened">内循环已开启</string>
+    <string name="outer_circle_opened">外循环已开启</string>
+    <string name="inner_circle_closed">内循环已关闭</string>
+    <string name="outer_circle_closed">外循环已关闭</string>
+    <string name="blow_head_opened">空调已调至吹脸模式</string>
+    <string name="blow_foot_opened">空调已调至吹脚模式</string>
+    <string name="blow_glass_opened">空调已调至吹窗模式</string>
+    <string name="ac_opened">AC已打开</string>
+    <string name="ac_closeed">AC已关闭</string>
+    <string name="blow_head_foot_opened">空调已调至脸脚模式</string>
+    <string name="blow_foot_window_opened">空调已调至脚霜模式</string>
+    <string name="air_clean_opened">净化器已开启</string>
+    <string name="air_clean_closed">我还不支持单独关闭净化器，可以直接关闭空调哦</string>
+    <string name="wipe_opened">雨刮已打开</string>
+    <string name="wipe_closed">雨刮已关闭</string>
+    <string name="wipe_speed_up">雨刮速度已调至最快</string>
+    <string name="wipe_speed_down">雨刮速度已调至最慢</string>
+    <string name="demist_opened">前窗除雾已开启</string>
+    <string name="demist_closed">前窗除雾已关闭</string>
+    <string name="frost_opened">前窗除霜已开启</string>
+    <string name="frost_closed">前窗除霜已关闭</string>
+    <string name="back_window_opened">后窗加热已开启</string>
+    <string name="back_window_closed">后窗加热已关闭</string>
+    <string name="mirror_folded">后视镜已折叠</string>
+    <string name="mirror_spread">后视镜已展开</string>
+    <string name="door_locked">车门已上锁</string>
+    <string name="door_unlocked">车门已解锁</string>
+    <string name="trunk_locked">即将关闭后备箱</string>
+    <string name="trunk_unlocked">正在打开后备箱</string>
+    <string name="trunk_unlocked_tip">后备箱正在开启,请注意周边情况</string>
+    <string name="ambient_lamp_opened">氛围灯已开启</string>
+    <string name="ambient_lamp_closed">氛围灯已关闭</string>
+    <string name="frog_lamp_opened">雾灯已开启</string>
+    <string name="frog_lamp_closed">雾灯已关闭</string>
+    <string name="high_beam_opened">远光灯已开启</string>
+    <string name="high_beam_closed">远光灯已关闭</string>
+    <string name="low_beam_opened">近光灯已开启</string>
+    <string name="low_beam_closed">近光灯已关闭</string>
+    <string name="little_beam_closed">位置灯已关闭</string>
+    <string name="little_beam_opened">位置灯已打开</string>
+    <string name="position_beam_closed">位置灯已关闭</string>
+    <string name="position_beam_opened">位置灯已打开</string>
+    <string name="left_direction_indicator_opened">左转向灯已开启</string>
+    <string name="left_direction_indicator_closed">左转向灯已关闭</string>
+    <string name="right_direction_indicator_opened">右转向灯已开启</string>
+    <string name="right_direction_indicator_closed">右转向灯已关闭</string>
+    <string name="romantic_close_hint">不支持此操作，请使用小灯开关操作关闭氛围灯</string>
+    <string name="can_not_use_sunroof_high_speed">当前车速过快，建议不要开启全景天窗</string>
+    <string name="can_not_use_window_high_speed">当前车速过快，建议不要开启车窗</string>
+    <string name="can_not_unlock_trunk">行车中请勿打开后备箱</string>
+    <string name="can_not_lock_trunk">请在停车后尝试关闭后备箱</string>
+    <string name="cancel">取消</string>
+    <string name="sure">确定</string>
+    <string name="after">后</string>
+    <string name="cancel_apppomtment_hint">确认取消您%s的保养预约？</string>
+    <string name="dateformat_text">yyyy年MM月dd日</string>
+    <string name="query_fail">获取失败</string>
+    <string name="extension_mileage">续航里程</string>
+    <string name="total_mileage">总里程</string>
+    <string name="left_front">左前</string>
+    <string name="right_front">右前</string>
+    <string name="left_back">左后</string>
+    <string name="right_back">右后</string>
+    <string name="left">左</string>
+    <string name="right">右</string>
+    <string name="front">前</string>
+    <string name="back_window">后</string>
+    <string name="smartmode_already_close_hint">%s当前已是关闭状态</string>
+    <string name="smartmode_already_open_hint">%s当前已是打开状态</string>
+
+    <!--vehiclecontrol end-->
+    <!--scenario-->
+    <string name="sun">一键温暖</string>
+    <string name="down_temp">快速降温</string>
+    <string name="smoke">抽烟模式</string>
+    <string name="cold">一键清凉</string>
+    <string name="snow">雨雪雾</string>
+
+    <string name="snow_mode">雨雪雾模式</string>
+    <string name="sun_mode">温暖模式</string>
+
+    <string name="song_not_list">当前歌曲不在播放列表中</string>
+    <string name="cursong_first">当前歌曲已经是第一首了</string>
+    <string name="cursong_last">当前歌曲已经是第一首了</string>
+
+    <!--nav-->
+    <string name="nav_exit">退出导航</string>
+    <string name="nav_end">结束导航</string>
+    <string name="nav_start">开始导航</string>
+    <string name="nav">导航</string>
+    <string name="edit_dest">请输入目的地</string>
+
+
+    <!--离车驾驶模式切换-->
+    <string name="car_state1">打开驾驶模式</string>
+    <string name="car_state2">退出驾驶模式</string>
+    <string name="car_state3">返回离车模式</string>
+    <string name="car_state4">打开离车模式</string>
+
+    <string name="car_state_open">已开启驾驶模式</string>
+    <string name="car_state_exit">已退出驾驶模式</string>
+    <string name="car_state_off">已开启离车模式</string>
+    <!--push message -->
+    <string name="rain_message">下雨了请关闭天窗</string>
+    <string name="snow_message">下雪了请关闭天窗</string>
+    <string name="sleet_message">下冰雹了请关闭天窗</string>
+    <string name="Polluted_day_message">污染天请关闭天窗</string>
+    <string name="close_skylight">关闭天窗</string>
+
+    <!--离车模式打开音乐情景模式-->
+    <string name="car_open_music">打开音乐</string>
+    <string name="car_open_contextual_model">打开情景模式</string>
+
+    <!--离车模式打开音乐情景模式-->
+    <string name="music_open_list1">打开播放列表</string>
+    <string name="music_open_list2">播放列表</string>
+
+    <string name="music_open_menu1">菜单</string>
+    <string name="music_open_menu2">打开菜单</string>
+
+    <string name="music_back">返回</string>
+
+    <string name="music_back2">退出音乐</string>
+    <string name="music_back3">关闭音乐</string>
+
+    <string name="previous_item">上一个</string>
+    <string name="next_item">下一个</string>
+    <string name="music_previous_page">上一页</string>
+    <string name="music_next_page">下一页</string>
+
+    <string name="music_list_close1">收起列表</string>
+    <string name="music_list_close2">关闭列表</string>
+
+    <string name="music_local">本地歌曲</string>
+    <string name="music_new">新歌榜</string>
+    <string name="music_like">我喜欢</string>
+    <string name="music_popular">流行巅峰榜</string>
+
+    <string name="music_menu_close1">收起菜单</string>
+    <string name="music_menu_close2">关闭菜单</string>
+
+    <string name="previous_music">上一首</string>
+    <string name="next_music">下一首</string>
+    <string name="play_music">播放</string>
+    <string name="pause_music">暂停</string>
+    <string name="music_open_menu3">打开列表</string>
+    <string name="music_close_menu1">关闭播放列表</string>
+    <string name="music_close_menu2">关闭列表</string>
+
+    <string name="music_open_volume1">打开音量</string>
+    <string name="music_open_volume2">设置音量</string>
+
+    <string name="music_open_menu4">打开菜单</string>
+    <string name="music_open_menu5">菜单</string>
+
+    <string name="music_wakeup">试试说暂停播放，继续播放，下一首</string>
+    <!--safecode-->
+    <string name="add_code">设置安全码</string>
+    <string name="add_code1">请输入新的\n安全码</string>
+    <string name="add_code2">请再次输入新的\n安全码</string>
+    <string name="add_code3">两次输入的安全码不一致</string>
+
+    <string name="u_code">修改安全码</string>
+    <string name="u_code1">请输入\n旧安全码</string>
+    <string name="u_code2">请输入\n新安全码</string>
+    <string name="u_code3">请再次\n输入安全码</string>
+    <string name="v_code">验证安全码</string>
+    <string name="v_code1">请输入您的\n安全码</string>
+    <string name="v_code2">安全码错误,您今天还有%d次机会</string>
+    <string name="v_code3">找回安全码 &gt;</string>
+    <string name="v_code4">安全码已输错5次</string>
+    <string name="v_code5">您可以选择</string>
+    <string name="v_code6">找回安全码</string>
+
+    <string name="f_code">获取验证码</string>
+    <string name="f_code1">下一步</string>
+    <string name="f_code2">请输入验证码</string>
+    <string name="f_code3">请输入身份证号</string>
+    <string name="f_code4">请输入手机号码</string>
+    <string name="f_code5">手机号格式错误</string>
+    <string name="f_code6">验证码格式错误</string>
+    <string name="f_code7">身份证号格式错误</string>
+    <string name="f_code8">系统错误</string>
+
+    <string name="sim_active_tip1">激活车机，您可以：\n手机开启/锁定您的爱车;\n远程控制您的爱车;</string>
+    <string name="sim_active_tip2">XXXX错误原因,请核对资料后重新提交\n\n\n</string>
+    <string name="mycar_sim_not_active">未激活车机</string>
+    <string name="mycar_sim_active_waiting">车机激活审核中，请稍等...</string>
+    <string name="mycar_sim_active_failed">抱歉，激活车机失败！</string>
+    <string name="mycar_sim_already_active">SIM卡已激活</string>
+    <string name="mycar_bluekey_enable">已开启</string>
+    <string name="mycar_bluekey_disable">未开启</string>
+    <string name="mycar_control_enable">已开通</string>
+    <string name="mycar_control_disable">未开通</string>
+    <string name="mycar_control_action1">开通远程控制 ></string>
+    <string name="mycar_control_action2">修改安全码 ></string>
+    <string name="mycar_bluekey_action1">开启蓝牙钥匙 ></string>
+    <string name="mycar_bluekey_action2">关闭蓝牙钥匙 ></string>
+    <string name="mycar_btn_active_sim1">马上激活</string>
+    <string name="mycar_btn_active_sim2">重新激活</string>
+    <string name="bind_before_tip1">开始绑定车辆前\n请做好以下准备工作</string>
+    <string name="bind_before_tip2">●    坐进您的爱车\n\n●    启动汽车\n\n●    打开手机蓝牙</string>
+    <string name="bind_no_device">请确保:\n1.请坐进你的爱车\n2.启动汽车</string>
+    <string name="bind_active_info">激活车机可获得\n\n●    手机开启/锁定爱车\n\n●    远程控制车辆爱车</string>
+    <string name="bind_no_device_title">没有发现可连接的设备</string>
+    <string name="active_before_tip1">开始激活车辆前，请您做好以下准备工作</string>
+    <string name="active_before_tip2">请准备好您的身份证\n\n选择光线明亮处</string>
+    <string name="goto_login_first">请先登录</string>
+
+    <!--升级-->
+    <string name="v1">版本</string>
+    <string name="v2">v %s</string>
+    <string name="v3">开始下载</string>
+    <string name="v4">安装</string>
+    <string name="v5">正在下载</string>
+    <string name="v6">取消</string>
+    <string name="v7">开始升级</string>
+    <string name="v8">发现应用新版本</string>
+    <string name="v9">发现车机新版本</string>
+    <string name="v10">大小:%s</string>
+    <string name="v11">您的账号已在另一台设备登录</string>
+    <string name="v12">退出</string>
+    <string name="v13">重新登录</string>
+    <string name="v14">暂停</string>
+    <string name="v15">将为你开启最后一公里步行导航</string>
+    <string name="v16">开启:%s</string>
+    <string name="v17">离车模式</string>
+    <!--login start-->
+    <string name="enter_phone_number">输入手机号</string>
+    <string name="correct_phone_number_hint">请输入正确的手机号哦</string>
+    <string name="verification_code">验证码</string>
+    <string name="input_verification_code">请输入验证码哦</string>
+    <string name="get_verification_code">获取验证码</string>
+    <string name="recapture">重新获取(%s)</string>
+    <string name="login_or_regist">登录/注册</string>
+    <string name="login_hint">未注册的手机号码验证后自动创建车机账户</string>
+    <string name="login">登录</string>
+    <string name="phont_edittext_hint">请输入手机号码</string>
+    <string name="getcode_edittext_hint">请输入验证码</string>
+    <!--login end-->
+
+    <!--OTA-->
+    <string name="upgrade_check_failed">升级包文件出错</string>
+    <string name="download_faild">下载失败</string>
+    <string name="update_no_network">车机网络连接已断开,请检查网络</string>
+    <string name="update_unauthorized">车机网络鉴权失败</string>
+    <string name="upgrade_verify_failed">升级包文件校验失败</string>
+    <string name="no_space_sdcard">车机本地空间不足,请先清理后再升级</string>
+    <string name="no_space_no_udisk">车机本地空间和U盘空间都不足，请先清理空间或更换U盘。</string>
+
+    <string name="o01">开始检验</string>
+    <string name="o02">检验失败</string>
+    <string name="o021">剩余可用流量不足</string>
+    <string name="o022">车辆电量不足</string>
+    <string name="o023">车机内存不足，且未插入U盘</string>
+    <string name="o024">未检测到USB设备</string>
+    <string name="o025">USB设备可用升级空间不足</string>
+    <string name="o026">车机检测失败</string>
+    <string name="o03">检验成功</string>
+    <string name="o04">开始下载</string>
+    <string name="o05">下载失败</string>
+    <string name="o06">下载成功</string>
+    <string name="o07">开始安装</string>
+    <string name="o08">安装失败</string>
+    <string name="o09">安装成功</string>
+    <string name="o10">开始回滚</string>
+    <string name="o11">回滚失败</string>
+    <string name="o12">回滚成功</string>
+    <string name="o13">软件未生效</string>
+    <string name="o14">软件已生效</string>
+    <string name="o_usb">U盘没有新的版本</string>
+    <string name="o_usb1">U盘没有升级文件</string>
+    <!--MUSIC-->
+    <string name="music">音乐</string>
+    <string name="no_singer">暂无歌手</string>
+    <string name="no_song">暂无歌曲</string>
+    <string name="login_qqmusic">请先登录QQ音乐</string>
+    <string name="music_voicewords">试试说:暂停播放、继续播放、下一个</string>
+
+    <!--Scenario-->
+    <string name="close_car">正在关闭车窗请注意安全</string>
+
+    <!--WeChat-->
+    <string name="wechat_voice_switch_on_str">朗读-开</string>
+    <string name="wechat_voice_switch_off_str">朗读-关</string>
+    <string name="wechat_reply_str">回复</string>
+    <string name="wechat_income_remind_str">请说：回复消息、关闭微信</string>
+    <string name="wechat_incomes_remind_str">请说：回复消息、关闭微信、下一条</string>
+    <string name="wechat_reply_remind_str">请说回复内容</string>
+    <string name="wechat_reply_input_msg_remind_str">请说：发送微信、关闭微信还是回复消息</string>
+    <string name="wechat_send_input_remind_str">你要发什么</string>
+    <string name="wechat_send_confirm_remind_str">确认发送吗</string>
+    <!--<string name="wechat_send_title_str">发微信</string>-->
+    <string name="wechat_send_speech_remind_listening_str">我正在听....</string>
+    <string name="wechat_send_speech_remind_str">请说发送微信、关闭微信，重新说</string>
+    <string name="wechat_send_speech_remind_str2">请说发送、关闭，重新说</string>
+    <string name="wechat_send_input_msg_remind_str">点击重新输入</string>
+    <string name="wechat_get_address_error_remind_str">获取收件人失败,无法发送</string>
+    <string name="wechat_send_title_str">发微信给：%1$s</string>
+
+    <string name="iccid_empty">iccid是空</string>
+
+    <string name="select_hint">请说第几个，或手动选择</string>
+    <string name="select_hint_hint">超时将自动选择第一个</string>
+    <string name="nav_try_to_say">试试说</string>
+    <string name="nav_hint">"回家、去公司\n我要去肯德基广场\n附近有什么好吃的\n我要去加油站"</string>
+    <string name="nav_hint_gohome">回家、去公司</string>
+    <string name="nav_hint_gopark">我要去肯德基广场</string>
+    <string name="nav_hint_eat">附近有什么好吃的</string>
+    <string name="nav_hint_oil">我要去加油站</string>
+
+    <string name="restaurant_price_start">人均&#8194;</string>
+    <string name="restaurant_price_end">&#8197;元</string>
+    <string name="restaurant_distance">距离&#8194;</string>
+    <string name="scenic_distance">距离&#8194;</string>
+    <string name="restaurant_call">呼叫订座</string>
+    <string name="weather_temp">℃</string>
+    <string name="weather_frag_title">为您查到\n最近5天天气</string>
+    <string name="nav_scenic_title">已找到附近景点\n要去哪一个？</string>
+    <string name="nav_restaurant_title">已找到附近美食\n要去哪一个？</string>
+    <string name="out_of_app_hint_title">你可以这样说:</string>
+    <string name="out_of_app_hint_wechat">发微信给刘德华</string>
+    <string name="out_of_app_hint_nav">我要去天安门</string>
+    <string name="out_of_app_hint_phone">打电话给妈妈</string>
+    <string name="out_of_app_hint_music">想听周杰伦的歌</string>
+    <string name="out_of_app_hint_radio">我要听105.8</string>
+    <string name="out_of_app_hint_food">附近有什么好吃的</string>
+    <string name="out_of_app_hint_weather">上海明天天气</string>
+    <string name="out_of_app_hint_news">播放科技新闻</string>
+
+    <!-- Refresh Card -->
+    <string name="title_radio">电台</string>
+    <string name="title_music">QQ音乐</string>
+    <string name="title_navigation">百度导航</string>
+    <string name="title_phone">电话</string>
+    <string name="title_weather">天气</string>
+    <string name="title_guess">猜您要去</string>
+    <string name="title_search_dest">搜索目的地</string>
+    <string name="title_search_radio">搜索电台</string>
+    <string name="title_news">新闻播报</string>
+
+    <string name="subtitle_install">请安装</string>
+    <string name="subtitle_preset_dest">预设目的地</string>
+    <string name="subtitle_collection_dest">收藏地址</string>
+    <string name="subtitle_car">车辆</string>
+    <string name="subtitle_last_play">上次播放</string>
+    <string name="subtitle_music_favorite">我喜欢</string>
+    <string name="subtitle_music_local">本地歌曲</string>
+    <string name="subtitle_music_top_list">流行巅峰榜</string>
+    <string name="subtitle_missed_call">未接来电</string>
+    <string name="subtitle_last_call">上次通话</string>
+    <string name="subtitle_collection_contact">收藏</string>
+    <string name="subtitle_search">搜索</string>
+    <string name="subtitle_my_collection">我的收藏</string>
+    <string name="subtitle_radio_playing">正在播放</string>
+
+    <string name="content_back_home">回家</string>
+    <string name="content_go_company">去公司</string>
+    <string name="content_where_to_go">想去那里?</string>
+    <string name="content_install_qq_music">安装QQ音乐</string>
+    <string name="content_music_make_happy">QQ音乐,让生活充满音乐</string>
+    <string name="content_missed_call">未接来电</string>
+    <string name="content_authorization">找不到通讯录</string>
+    <string name="content_call_to_somebody">给谁打电话?</string>
+    <string name="content_no_connect">收音机没连接</string>
+    <string name="content_no_radio">没有电台</string>
+    <string name="content_rain_on">下雨了</string>
+    <string name="content_air_fouls">空气污染</string>
+    <string name="content_snow_on">下雪了</string>
+    <string name="content_too_cold">天寒地冻</string>
+    <string name="content_too_hot">酷暑难耐</string>
+    <string name="content_nice_weather">风和日丽</string>
+    <string name="content_install_baidu_map">安装百度地图</string>
+    <string name="content_music_empty_list">QQ音乐,让生活充满音乐</string>
+
+    <string name="message_open_radio">请打开车辆收音机收听</string>
+    <string name="message_have_no_login_in">您还没有登录</string>
+    <string name="message_have_not_bind_car">您还没有绑定车辆</string>
+    <string name="message_open_mode_rain_and_snow">开启雨雪模式</string>
+    <string name="message_open_mode_fog_and_haze">开启雾霾模式</string>
+    <string name="message_open_one_key_warm">开启一键温暖</string>
+    <string name="message_open_one_key_cool">开启一键清凉</string>
+    <string name="message_open_window">开窗透气</string>
+
+    <string name="metre">米</string>
+    <string name="my_collection">我的收藏</string>
+    <string name="delicacy">美食</string>
+    <string name="nearby_delicacy">附近美食</string>
+    <string name="parking">停车场</string>
+    <string name="nearby_parking">附近停车场</string>
+    <string name="scenery">风景</string>
+    <string name="nearby_scenery">附近风景</string>
+    <string name="oil_station">加油站</string>
+    <string name="nearby_oil_station">附近加油站</string>
+    <string name="car_nearby_oil_station">车附近加油站</string>
+    <string name="preset_home">设置为家</string>
+    <string name="preset_company">设置为公司</string>
+    <string name="preset_dest">预设目的地</string>
+    <string name="collection">收藏</string>
+    <string name="collected">已收藏</string>
+    <string name="cancelcollected">取消收藏</string>
+    <string name="preset">预设</string>
+    <string name="finishpreset">预设目的地完成</string>
+    <string name="collection_dest">收藏地址</string>
+    <string name="home">家</string>
+    <string name="company">公司</string>
+    <string name="goHome">我要回家</string>
+    <string name="goHome1">回家</string>
+    <string name="gotoCompany">去公司</string>
+    <string name="origin">起点</string>
+    <string name="input_dest">请输入目的地</string>
+    <string name="no_current_lng">不能定位当前位置</string>
+    <string name="no_current_car_lng">不能车辆当前位置</string>
+    <string name="no_phone_num">无法获得电话号码</string>
+    <string name="gotosetting">去设置></string>
+    <string name="time">时间</string>
+    <string name="minute">分钟</string>
+    <string name="second">秒</string>
+    <string name="destdistance">距离</string>
+    <string name="percapita">人均</string>
+    <string name="rmb">元</string>
+    <string name="no_accservice">未开启无障碍服务，将无法为您开启离车步行导航</string>
+    <string name="channelname">离车模式通知</string>
+    <string name="walkstart">已为您开启步行导航</string>
+    <string name="please_select_which">您可以说第几个</string>
+
+
+    <string name="open_notify_permission_title">通知使用权限</string>
+    <string name="open_notify_permission">为更好的为您服务,请打开通知使用权限</string>
+    <string name="baidu_wnavi_ing">正在步行导航</string>
+    <string name="baidu_navi_ing">正在导航</string>
+    <string name="baidu_name">百度地图</string>
+    <string name="baiduui_fullview">查看全程</string>
+    <string name="baiduui_fullview_exit">退出查看全程</string>
+    <string name="baiduui_less_time">时间优先</string>
+    <string name="baiduui_2d">正北向上</string>
+    <string name="baiduui_3d">车头向上</string>
+    <string name="baiduui_less_fee">少收费</string>
+    <string name="avoidtrafficjam">避开拥堵</string>
+    <string name="avoidexpressway">不走高速</string>
+    <string name="firstexpressway">高速优先</string>
+    <string name="openroadcondition">打开路况</string>
+    <string name="closeroadcondition">关闭路况</string>
+    <string name="baidustopnavi">停止导航</string>
+    <string name="baiduzoomin">放大地图</string>
+    <string name="baiduzoomout">缩小地图</string>
+
+
+    <!-- [BUG:L0001M-483] Added by brianchen@pateo.com.cn, at 2018.12.05, BEGIN-->
+    <string name="toast_user_no_market">您的手机中没有找到应用商店，请自行安装qq音乐。</string>
+    <string name="voice_radio_next_frequency">下一台</string>
+    <string name="voice_radio_change_frequency">换个台</string>
+    <string name="voice_radio_pre_frequency">上一台</string>
+    <string name="voice_radio_scan_frequency1">开始搜台</string>
+    <string name="voice_radio_scan_frequency2">重新搜台</string>
+    <string name="voice_radio_scan_frequency3">开始扫台</string>
+    <string name="voice_radio_open_menu">节目列表</string>
+    <string name="voice_radio_open_menu1">节目单</string>
+    <string name="voice_radio_open_menu2">打开节目单</string>
+    <string name="voice_radio_close_menu">关闭列表</string>
+    <string name="voice_radio_close_menu1">收起列表</string>
+    <string name="voice_radio_back_to">退出电台</string>
+    <string name="voice_radio_back_to1">关闭电台</string>
+    <!-- [BUG:L0001M-483] Added by brianchen@pateo.com.cn, at 2018.12.05, END-->
+    <string name="copyright">ArielApp co.  Copyright ©\n Copyright © 2011-2018 Pateo co.All Rights Reserved.</string>
+
+    <string name="start_nav">开始导航</string>
+    <string name="start_phone_call">拨打电话</string>
+    <string name="start_fav">加入收藏</string>
+    <string name="start_fav_already">已经加入收藏</string>
+    <string name="back_to">返回</string>
+    <string name="back_to_1">退出</string>
+    <string name="back_to_2">关闭</string>
+
+    <string name="hui_traffic">请注意规划出行时间和路径</string>
+    <string name="hui_snow">雨雪天气</string>
+    <string name="hui_snow_command">请关闭车窗或天窗</string>
+    <string name="hui_air">空气质量差</string>
+    <string name="hui_air_command">建议开启雾霾模式</string>
+    <string name="hui_closewindow_voice">正在关闭车窗和天窗请注意安全</string>
+
+
+    <string name="bk_playlist">播放列表</string>
+    <string name="bk_openplaylist">打开播放列表</string>
+    <string name="bk_openplaylist1">打开列表</string>
+    <string name="bk_music_next">下一个</string>
+    <string name="bk_music_prev">上一个</string>
+    <string name="bk_music_switch">换一首</string>
+    <string name="bk_music_menu">打开菜单</string>
+    <string name="bk_music_menu1">我的歌单</string>
+    <string name="bk_music_menu2">打开歌单</string>
+    <string name="bk_music_pause">停止播放</string>
+    <string name="bk_music_play">继续播放</string>
+    <string name="bk_music_exit">退出音乐</string>
+    <string name="bk_music_close">关闭音乐</string>
+    <string name="bk_music_close_playlist">收起列表</string>
+    <string name="bk_music_exit_playlist">关闭列表</string>
+    <string name="bk_music_close_menulist">收起菜单</string>
+    <string name="bk_music_exit_menulist">关闭菜单</string>
+    <string name="bk_music_exit_menulist1">关闭歌单</string>
+    <string name="bk_no_localmusic">本地音乐列表为空,您可以选择其他菜单列表或添加QQ本地音乐</string>
+    <string name="bk_no_favmusic">我喜欢列表为空,您可以选择其他菜单列表或收藏QQ音乐</string>
+
+    <string name="and">和</string>
+    <string name="new_music">新歌榜</string>
+    <string name="num_music">流行指数榜</string>
+    <string name="not_net">暂无网络</string>
+    <string name="net_check">当前网络未连接</string>
+    <string name="navi_not_net">网络无法连接</string>
+    <string name="navi_not_net_tip">世界上最远的距离莫过于此</string>
+    <string name="navi_no_result">没有找到相关点</string>
+    <string name="navi_no_result_tip">请从火星回到地球吧</string>
+    <string name="navi_research">再试一次</string>
+    <string name="navi_no_his_data">没有搜索历史</string>
+    <string name="navi_no_coll_data">没有收藏历史</string>
+    <string name="navi_data_tip">智能出行,有我无忧</string>
+
+    <string name="loss_net_hint">请注意流量和WIFI连接</string>
+    <string name="have_no_right">非会员不支持播放,为您自动播放下一首</string>
+    <string name="error_args_illegal">参数异常</string>
+    <string name="error_interrupted">中断异常</string>
+    <string name="error_no_permission">权限异常</string>
+    <string name="error_no_intallized">初始化异常</string>
+    <string name="error_uknow">未知异常</string>
+    <string name="error_no_support_action">不支持操作</string>
+    <string name="error_query_mid">MID查询错误</string>
+    <string name="error_query_song_id">SONG ID查询错误</string>
+    <string name="error_data_args">DATA参数错误</string>
+    <string name="error_data_inner">DATA内部错误</string>
+    <string name="error_code_auth">授权错误,请登录</string>
+    <string name="error_data_net">DATA网络错误</string>
+    <string name="error_code_list_long">列表过长</string>
+    <string name="error_code_no_media">无媒体资源</string>
+    <string name="error_code_no_net">无网络</string>
+    <string name="error_code_no_play_permission">无播放权限</string>
+    <string name="error_code_no_play_stor">存储低或无存储</string>
+    <string name="error_code_opera_net">操作网络</string>
+    <string name="error_code_forb_over_sea">海外受限</string>
+    <string name="error_code_player_error">播放器异常</string>
+    <string name="error_code_too_often">操作过于频繁</string>
+    <string name="error_code_play_unknow">播放未知状态</string>
+    <string name="error_code_sv_ini_timeout">服务初始化超时</string>
+    <string name="error_code_sv_not_ready">服务未初始化</string>
+    <string name="empty_folder">获取文件夹为空，请重新操作</string>
+    <string name="get_play_list_info">播放列表获取中...</string>
+    <string name="get_song_list_info">歌曲列表获取中...</string>
+    <string name="require_play_info">播放请求中...</string>
+    <string name="pls_add_local_music">本地文件夹为空，请在QQ music中下载歌曲</string>
+    <string name="down_process">继续下拉,退出驾驶模式</string>
+
+
+    <string name="need_login_hint">登录信息已经过期，请重新登录</string>
+    <string name="permiss_title">体验完美羚机</string>
+    <string name="permiss_title_one">为了提供更好的使用体验</string>
+    <string name="permiss_title_two">需要获取以下权限</string>
+    <string name="navi_text">位置定位权限</string>
+    <string name="navi_hint">准确定位您的位置，精确规划每一个行程</string>
+    <string name="mic_text">麦克风权限</string>
+    <string name="mic_hint">听懂您，并执行您的每一个指令</string>
+    <string name="storage_text">储存权限</string>
+    <string name="storage_hint">保存您的相关数据</string>
+    <string name="call_text">电话权限</string>
+    <string name="call_hint">我可以帮您在驾驶时候，更加安全的拨打、接听电话</string>
+    <string name="start_setting">开始设置</string>
+    <string name="version_text">版本</string>
+    <string name="version_code_text">羚机版本号</string>
+    <string name="has_new_version">有新版本可用</string>
+    <string name="start_upgrade">现在升级</string>
+    <string name="check_upgrade">检查更新</string>
+
+    <!-- main tip text by Alan-->
+    <string name="main_door_unlocked">车门未锁</string>
+    <string name="main_door_locked">解锁</string>
+    <string name="main_hot_car">热车</string>
+    <string name="main_is_hot_car">正在热车</string>
+    <string name="main_tail_door_unlocked">尾门未锁</string>
+    <string name="main_unlock_tail_door">开尾箱</string>
+    <string name="main_warmth">温暖</string>
+    <string name="main_is_warm">正在温暖</string>
+    <string name="main_cool">清凉</string>
+    <string name="main_is_cool">正在清凉</string>
+    <string name="main_one_close_window">关车窗</string>
+    <string name="main_no_close_window">车窗未关</string>
+    <string name="main_honking_flash">鸣笛闪灯</string>
+    <string name="main_where_go">上车后想去哪里?</string>
+    <string name="main_nav_to_car">导航到车</string>
+    <string name="main_endurance_mileage">续航里程</string>
+    <string name="main_goto_gas">去加油站</string>
+    <string name="main_have">预设行程</string>
+    <string name="main_have_num">暂无行程</string>
+    <string name="main_no_search_car">未查询到车</string>
+    <string name="main_parking">新城市广场停车场</string>
+    <string name="main_len">634m</string>
+    <string name="main_pop_cancel">取消</string>
+    <string name="main_pop_delete_adress">删除目的地</string>
+    <string name="main_pop_update_adress">修改目的地</string>
+    <string name="main_long_distance">远程车控</string>
+
+    <string name="no_locate">未定位到数据</string>
+    <string name="no_result">未查询到结果</string>
+    <string name="mycar_set_pin">设置安全码</string>
+    <string name="mycar_mod_pin">修改安全码</string>
+    <string name="mycar_pin_success">安全码修改成功~</string>
+    <string name="mycar_pin_failed">安全码修改失败~</string>
+    <!-- driviing tip text by Alan-->
+    <string name="driving_nav">导航</string>
+    <string name="driving_contextual">情景模式</string>
+    <string name="driving_music">音乐</string>
+    <string name="driving_phone">电话</string>
+    <string name="driving_radio">收音机</string>
+    <string name="driving_icon">驾驶模式</string>
+    <string name="driving_carnum">苏FHY820</string>
+    <string name="driving_smart_txt">为你推荐</string>
+    <string name="driving_or_txt">所有应用</string>
+    <!-- this is used for wechat uicontrol-->
+    <string name="reply_wechat_ui_control">回复消息</string>
+    <string name="replys_wechat_ui_control">回消息</string>
+    <string name="next_wechat_msg_ui_control">下一条</string>
+    <string name="nexts_wechat_msg_ui_control">下一个</string>
+    <string name="reply_wechat_send_ui_control">发送微信</string>
+    <string name="reply_wechat_not_ui_control">不回复</string>
+    <string name="reply_wechat_cancel_ui_control">取消</string>
+    <string name="reply_wechat_back_ui_control">返回返回</string>
+    <string name="reply_wechat_exit_ui_control">退出微信</string>
+    <string name="reply_wechat_close_ui_control">关闭关闭</string>
+    <string name="reply_wechat_close_ui_control2">关闭微信</string>
+    <string name="reply_wechat_close_ui_control3">取消发送</string>
+    <string name="reply_wechat_close_ui_control4">不发送</string>
+    <string name="reinput_wechat_cancel_ui_control">重新说</string>
+    <string name="reinputs_wechat_cancel_ui_control">重新输入</string>
+    <string name="open_msg_tts_wechat_ui_control">打开声音</string>
+    <string name="open_msg_tts_wechat_ui_control2">继续朗读</string>
+    <string name="open_msg_tts_wechat_ui_control3">打开朗读</string>
+    <string name="close_msg_tts_wechat_ui_control">关闭朗读</string>
+    <string name="close_msg_tts_wechat_ui_control2">关闭声音</string>
+    <string name="close_msg_tts_wechat_ui_control3">停止朗读</string>
+
+
+    <string name="current_leav_car">当前是离车模式</string>
+    <string name="current_in_car">当前是驾驶模式</string>
+    <string name="main_lc">-- km</string>
+
+    <string name="voice_news_title">新闻</string>
+
+    <string name="call_out">呼叫</string>
+    <string name="phone_call">打电话</string>
+    <string name="set_out">出发</string>
+    <string name="navi_confirm">确认</string>
+    <string name="navi_ok">好的</string>
+    <string name="navi_yes">是的</string>
+    <string name="navi_ensure">确定</string>
+    <string name="navi_dialog_title">提示</string>
+    <string name="navi_dialog_message">是否导航到预设目的地？</string>
+    <string name="navi_dialog_cancle">取消</string>
+    <string name="navi_first">第一个</string>
+    <string name="navi_second">第二个</string>
+    <string name="navi_third">第三个</string>
+    <string name="navi_fourth">第四个</string>
+    <string name="navi_five">第五个</string>
+    <string name="navi_six">第六个</string>
+    <string name="navi_seven">第七个</string>
+    <string name="navi_eight">第八个</string>
+    <string name="navi_nine">第九个</string>
+    <string name="navi_ten">第十个</string>
+    <string name="navi_guide">你想去哪里</string>
+    <string name="navi_city_null">option or keyword or city can not be null</string>
+    <string name="navi_search_null">suggestionsearch is null, please call newInstance() first</string>
+    <string name="navi_add_collection">加入收藏</string>
+    <string name="navi_add_collection1">收藏</string>
+    <string name="navi_phone_call">拨打电话</string>
+    <string name="navi_phone_order">电话预定</string>
+    <string name="navi_phone_order1">呼叫订座</string>
+    <string name="navi_go_now">现在出发</string>
+    <string name="navi_open_collection">打开收藏</string>
+    <string name="navi_search_history">搜索历史</string>
+    <string name="navi_history">历史记录</string>
+    <string name="navi_search_delicacy">搜索美食</string>
+    <string name="navi_search_restaurant">搜索餐馆</string>
+    <string name="navi_search_restaurants">搜索饭店</string>
+    <string name="navi_nearby_delicacy">附近美食</string>
+    <string name="navi_nearby_restaurant">附近餐馆</string>
+    <string name="navi_nearby_restaurants">附近饭店</string>
+    <string name="navi_search_park">搜索停车场</string>
+    <string name="navi_nearby_park">附近停车场</string>
+    <string name="navi_search_oilstation">搜索加油站</string>
+    <string name="navi_nearby_oilstation">附近加油站</string>
+    <string name="navi_search_scenic">搜索景点</string>
+    <string name="navi_nearby_scenic">附近景点</string>
+    <string name="navi_back">返回</string>
+    <string name="navi_back1">退出</string>
+    <string name="navi_back2">关闭</string>
+    <string name="navi_exit">退出导航</string>
+    <string name="navi_close">关闭导航</string>
+    <string name="navi_cancle">取消</string>
+    <string name="navi_goto_start">即将导航到</string>
+    <string name="navi_speak_guide_ok_cancle">你可以说: 好的, 取消</string>
+    <string name="navi_close_list">关闭列表</string>
+    <string name="navi_close_list1">收起列表</string>
+    <string name="navi_park">停车场</string>
+    <string name="navi_oilstation">加油站</string>
+    <string name="navi_scenic">旅游景点</string>
+    <string name="navi_search_hint">你想去哪里？</string>
+
+    <string name="voice_news_next">下一个</string>
+    <string name="voice_news_pre">上一个</string>
+    <string name="cool_mode">清凉模式</string>
+    <string name="open_cool_mode">清凉</string>
+    <string name="cool_mode1">太热了</string>
+    <string name="worm_mode">温暖模式</string>
+    <string name="worm_car">热车</string>
+    <string name="start_car">启动发动机</string>
+    <string name="find_car">寻车</string>
+    <string name="find_car1">我的车在哪里</string>
+    <string name="rain_mode">下雨了</string>
+    <string name="rain_mode1">下雪了</string>
+
+
+    <!--wakeup-->
+    <string name="wakeup1">上一首</string>
+    <string name="wakeup2">下一首</string>
+    <string name="wakeup3">打开音乐</string>
+    <string name="wakeup4">暂停播放</string>
+    <string name="wakeup5">上一台</string>
+    <string name="wakeup6">下一台</string>
+    <string name="wakeup7">打开电台</string>
+    <string name="wakeup9">声音大一点</string>
+    <string name="wakeup10">再大一点</string>
+    <string name="wakeup11">声音小一点</string>
+    <string name="wakeup12">再小一点</string>
+    <string name="wakeup13">接听</string>
+    <string name="wakeup14">挂断</string>
+    <string name="wakeup15">开始导航</string>
+    <string name="wakeup16">取消导航</string>
+    <string name="wakeup17">关闭导航</string>
+    <string name="wakeup18">第一个</string>
+    <string name="wakeup19">第二个</string>
+    <string name="wakeup20">第三个</string>
+    <string name="wakeup21">打开播放列表</string>
+    <string name="wakeup22">关闭播放列表</string>
+    <string name="wakeup23">开始播放</string>
+    <string name="wakeup24">回复</string>
+    <string name="wakeup25">取消</string>
+    <string name="wakeup26">下一条</string>
+    <string name="wakeup27">打开朗读</string>
+    <string name="wakeup28">关闭朗读</string>
+    <string name="wakeup29">播放列表</string>
+    <string name="wakeup30">上一个</string>
+    <string name="wakeup31">下一个</string>
+    <string name="wakeup32">上一页</string>
+    <string name="wakeup33">下一页</string>
+    <string name="wakeup34">返回</string>
+    <string name="wakeup35">鸣笛闪灯</string>
+    <string name="wakeup36">打开热车模式</string>
+    <string name="wakeup37">打开温暖模式</string>
+    <string name="wakeup38">全车升温</string>
+    <string name="wakeup39">打开清凉模式</string>
+    <string name="wakeup40">全车降温</string>
+    <string name="wakeup41">打开雨雪模式</string>
+    <string name="wakeup42">打开下雨模式</string>
+    <string name="wakeup43">抽烟模式</string>
+    <string name="wakeup44">我想抽烟</string>
+    <string name="wakeup45">停止导航</string>
+    <string name="wakeup46">回首页</string>
+    <string name="wakeup47">继续播放</string>
+    <string name="wakeup48">取消导航</string>
+    <string name="wakeup49">关闭导航</string>
+    <string name="wakeup50">退出导航</string>
+
+    <string name="car_version_text">车机版本管理</string>
+
+    <string name="on_car_control">打开车控测试模式</string>
+    <string name="off_car_control">关闭车控测试模式</string>
+
+    <string name="ariel_welcome_prompt">欢迎进入驾驶模式</string>
+    <string name="welcome_prompt_str">尊贵的%s车主</string>
+    <string name="welcome_doing_prompt">正在为您</string>
+    <string name="welcome_adjust_seat">调节座椅</string>
+    <string name="welcome_adjust_rearview">调节后视镜</string>
+
+    <string name="tmp_key">语音控制车辆门窗，空调等\n使用车内音响听歌、听电台\n语音使用导航、电话、微信</string>
+    <string name="tmp_key1">如果汽车已经启动，请熄火\n后重新启动</string>
+    <string name="tmp_key2">获得更多权限：\n永久获取钥匙权限\n用手机解锁车门\n…</string>
+    <string name="key1">用手机解锁车门\n座椅、后视镜按你的习惯自动调节\n在家预设目的地上车导航\n</string>
+    <string name="key2">手机远程控车，查看车况\n管理所有手机钥匙\n授权临时钥匙给好友\n…</string>
+    <string name="key3">手机远程控车，查看车况\n管理所有手机钥匙\n授权临时钥匙给好友</string>
+
+    <string name="update_txt">修改</string>
+    <string name="go_oil">去加油</string>
+
+    <string name="try_to_talk">试试直接说</string>
+    <string name="voice_hints_for_card">我要导航&#160;&#160;听音乐&#160;&#160;听电台&#160;&#160;拨打电话</string>
+
+    <string name="music_search_no_content">没有找到您想要听的歌曲</string>
+    <string name="navi_poi_bean_uid">数据无效</string>
+    <string name="engine_has_been_shut_down">发动机已关闭</string>
+
+    <string name="interlligence_start_nav">我要导航</string>
+    <string name="interlligence_start_music">听音乐</string>
+    <string name="interlligence_start_fm">听电台</string>
+    <string name="interlligence_start_call">拨打电话</string>
+    <string name="interlligence_start_car">打开车辆</string>
+    <string name="frequency_invalid_toast">无效频点或不在频道列表内</string>
+    <string name="cannot_use_vehicle_control_hint">当前车控指令正在执行中请稍后再试</string>
+
+    <string name="p_vehicle">车辆</string>
+    <string name="p_nav">导航</string>
+    <string name="p_music">音乐</string>
+    <string name="p_tel">电话</string>
+    <string name="p_fm">收音机</string>
+    <string name="p_wechat">微信</string>
+</resources>

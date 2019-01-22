@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scenic_item_root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/nav_item_layout_height"
+    android:orientation="horizontal">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scenic_item_number_bg"
+        android:layout_centerVertical="true">
+        <ImageView
+            android:layout_width="@dimen/nav_item_number_width"
+            android:layout_height="@dimen/nav_item_number_height"
+            android:background="@drawable/nav_number_bg_normal"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/scenic_item_number"
+            android:textSize="@dimen/nav_item_number_text_size"
+            android:layout_gravity="center"
+            android:textColor="@color/white"/>
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scenic_item_name"
+        android:layout_toRightOf="@id/scenic_item_number_bg"
+        android:layout_marginLeft="@dimen/nav_item_name_left"
+        android:layout_marginTop="@dimen/nav_item_name_top"
+        android:textColor="@color/white"
+        android:lines="1"
+        android:textSize="@dimen/nav_item_name_text_size" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scenic_item_address"
+        android:layout_toRightOf="@id/scenic_item_number_bg"
+        android:layout_below="@id/scenic_item_name"
+        android:layout_marginLeft="@dimen/nav_item_address_left"
+        android:layout_marginTop="@dimen/nav_item_address_top"
+        android:textColor="@color/white50"
+        android:lines="1"
+        android:textSize="@dimen/nav_item_address_text_size"/>
+
+</RelativeLayout>

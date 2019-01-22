@@ -1,0 +1,231 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="bean"
+            type="com.qinggan.app.voiceapi.bean.common.StockBean" />
+
+    </data>
+
+    <RelativeLayout
+        android:layout_marginLeft="262px"
+        android:background="#99000000"
+        android:paddingRight="80px"
+        android:layout_width="1440px"
+        android:layout_height="wrap_content"
+        android:paddingBottom="92px"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_marginLeft="60px"
+            android:layout_marginTop="60px"
+            android:id="@+id/stock_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{bean.name}"
+            android:textColor="#FFFAFAFA"
+            android:textSize="48px" />
+
+        <TextView
+            android:layout_marginTop="60px"
+            android:layout_marginLeft="1021px"
+            android:id="@+id/stock_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{bean.currentTime}"
+            android:textColor="#88FFFFFF"
+            android:textSize="36px" />
+
+        <LinearLayout
+            android:layout_marginTop="166px"
+            android:layout_marginLeft="816px"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="36px"
+                android:layout_height="36px"
+                android:src="@drawable/stock_up_icon" />
+
+            <TextView
+                android:layout_marginLeft="20px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="最高涨幅"
+                android:textColor="#88FFFFFF"
+                android:textSize="36px" />
+
+            <ImageView
+                android:layout_marginLeft="72px"
+                android:layout_width="36px"
+                android:layout_height="36px"
+                android:src="@drawable/stock_down_icon" />
+
+            <TextView
+                android:layout_marginLeft="20px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="最低跌幅"
+                android:textColor="#88FFFFFF"
+                android:textSize="36px" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/dayHighPrice"
+            android:layout_marginTop="230px"
+            android:layout_marginLeft="876px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{String.valueOf(bean.dayHighPrice)}"
+            android:textColor="@color/red"
+            android:textSize="48px" />
+
+        <TextView
+            android:id="@+id/dayLowPrice"
+            android:layout_marginTop="230px"
+            android:layout_marginLeft="1162px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{String.valueOf(bean.dayLowPrice)}"
+            android:textColor="@color/green"
+            android:textSize="48px" />
+
+        <LinearLayout
+            android:layout_marginTop="330px"
+            android:layout_marginLeft="816px"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="36px"
+                android:layout_height="match_parent"
+                android:src="@drawable/stock_total_icon" />
+
+            <TextView
+                android:layout_marginLeft="20px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="总市值/亿"
+                android:textColor="#88FFFFFF"
+                android:textSize="36px" />
+
+            <ImageView
+                android:layout_marginLeft="72px"
+                android:layout_width="36px"
+                android:layout_height="36px"
+                android:src="@drawable/stock_comp_icon" />
+
+            <TextView
+                android:layout_marginLeft="20px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="成交量/万"
+                android:textColor="#88FFFFFF"
+                android:textSize="36px" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/marketCap"
+            android:layout_marginTop="392px"
+            android:layout_marginLeft="876px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{String.valueOf(bean.marketCap/100000000)}"
+            android:textColor="#FFFFFFFF"
+            android:textSize="48px" />
+
+        <TextView
+            android:id="@+id/dayVolume"
+            android:layout_marginTop="392px"
+            android:layout_marginLeft="1162px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{String.valueOf(bean.dayVolume/10000)}"
+            android:textColor="#FFFFFFFF"
+            android:textSize="48px" />
+
+
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:layout_marginLeft="60px"
+            android:layout_marginTop="166px"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/stock_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{String.valueOf(bean.marketPrice)}"
+                app:textColor="@{bean.changeInPrice}"
+                android:textSize="88px" />
+
+            <TextView
+                android:layout_marginLeft="35px"
+                android:id="@+id/stock_change"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{bean.currentChange}"
+                app:textColor="@{bean.changeInPrice}"
+                android:textSize="30px" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="60px"
+            android:layout_marginTop="334px"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textSize="36px"
+                android:id="@+id/stock_open_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="今日开盘"
+                android:textColor="#BBFFFFFF" />
+
+            <TextView
+                android:id="@+id/openPrice"
+                android:layout_marginLeft="35px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{String.valueOf(bean.openPrice)}"
+                app:textColor="@{bean.changeInPrice}"
+                android:textSize="36px" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="60px"
+            android:layout_marginTop="394px"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="昨日收盘"
+                android:textColor="#BBFFFFFF"
+                android:textSize="36px" />
+
+            <TextView
+                android:id="@+id/previousClosePrice"
+                android:layout_marginLeft="35px"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{String.valueOf(bean.previousClosePrice)}"
+                android:textSize="36px" />
+        </LinearLayout>
+    </RelativeLayout>
+</layout>

@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/titlebar"
+        android:layout_marginTop="@dimen/dp40"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/back_btn"
+            android:layout_width="@dimen/dp50"
+            android:layout_height="@dimen/dp50"
+            android:layout_marginLeft="@dimen/dp10"
+            android:background="@drawable/home_icon_back"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp50"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:textSize="@dimen/sp18"
+            android:textColor="@android:color/black"
+            android:text="绑定车辆"/>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:id="@+id/rlBeforeBind"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal">
+            <TextView
+                android:id="@+id/txtBeforeBind1"
+                android:layout_alignParentTop="true"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp80"
+                android:layout_marginLeft="@dimen/dp40"
+                android:layout_marginRight="@dimen/dp40"
+                android:textSize="@dimen/dp30"
+                android:textColor="@color/black"
+                android:text="@string/bind_before_tip1"/>
+            <TextView
+                android:id="@+id/txtBeforeBind2"
+                android:layout_below="@+id/txtBeforeBind1"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/dp40"
+                android:layout_marginLeft="@dimen/dp40"
+                android:layout_marginRight="@dimen/dp40"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/dp20"
+                android:text="@string/bind_before_tip2"/>
+
+            <Button
+                android:id="@+id/btn_bind"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="40dp"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="@dimen/dp20"
+                android:layout_marginRight="@dimen/dp20"
+                android:layout_marginTop="@dimen/dp10"
+                android:background="@drawable/my_car_blue_btn_select"
+                android:text="开始绑定"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/sp20"
+                android:layout_height="@dimen/dp60" />
+           <!-- <Button
+                android:id="@+id/btn_bind"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/dp50"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_marginRight="@dimen/dp10"
+                android:layout_marginTop="@dimen/dp10"
+                android:background="@drawable/logbutton"
+                android:text="开始绑定"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/sp20"
+                android:layout_height="52dp" />-->
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlScanning"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/dp20"
+            android:layout_marginBottom="@dimen/dp40">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp20"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:textSize="@dimen/dp18"
+                android:textColor="@color/black"
+                android:text="可连接的设备"/>
+            <ImageView
+                android:id="@+id/ivConnecting"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/dp20"
+                android:layout_width="@dimen/dp30"
+                android:layout_height="@dimen/dp30"
+                android:src = "@drawable/icon_ing"/>
+
+            <TextView
+                android:id="@+id/txtRefresh"
+                android:visibility="gone"
+                android:layout_centerVertical="true"
+                android:drawableLeft="@drawable/icon_refresh"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="@dimen/dp20"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/dp20"
+                android:textColor="#3399ff"
+                android:text="刷新"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/mRecyclerView"
+                android:layout_marginLeft="@dimen/dp20"
+                android:layout_marginRight="@dimen/dp20"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="@dimen/dp30"
+                android:overScrollMode = "never"
+                android:fadeScrollbars = "false"
+                android:scrollbarSize="12px"
+                android:scrollbars="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <RelativeLayout
+                android:id="@+id/rlNoDevice"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="@dimen/dp30"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <android.support.v7.widget.CardView
+                    android:layout_marginTop="@dimen/dp30"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp5"
+                    app:cardBackgroundColor="#ffffff"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="5dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dp20"
+                            android:layout_marginTop="@dimen/dp20"
+                            android:textSize="@dimen/dp20"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:text="@string/bind_no_device_title"/>
+                        <TextView
+                            android:id="@+id/txtNoDevice"
+                            android:lineSpacingMultiplier = "1.2"
+                            android:layout_margin="@dimen/dp20"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/dp20"
+                            android:textColor="#60000000"
+                            android:text="@string/bind_no_device"/>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+
+
+        <RelativeLayout
+            android:id="@+id/rlBinding"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/dp20"
+            android:layout_marginBottom="@dimen/dp40"
+            android:layout_marginLeft="@dimen/dp40"
+            android:layout_marginRight="@dimen/dp40"
+            android:gravity="center_horizontal">
+
+
+            <RelativeLayout
+                android:id="@+id/rlIcon"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dp10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/ivIcon"
+                    android:layout_centerInParent="true"
+                    android:padding="@dimen/dp16"
+                    android:layout_width="@dimen/dp130"
+                    android:layout_height="@dimen/dp130"
+                    android:layout_gravity="center"
+                    android:scaleType="fitXY"
+                    android:src = "@drawable/pic_cir"/>
+                <ImageView
+                    android:id="@+id/ivParing"
+                    android:layout_centerInParent="true"
+                    android:scaleType="fitCenter"
+                    android:layout_width="@dimen/dp147"
+                    android:layout_height="@dimen/dp147"
+                    android:src = "@drawable/pack_pointcir"/>
+            </RelativeLayout>
+            <TextView
+                    android:id="@+id/tvState"
+                    android:layout_below="@+id/rlIcon"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/dp30"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/dp20"
+                    android:textColor="@color/black"
+                    android:text="正在配对"/>
+            <TextView
+                    android:layout_below="@+id/tvState"
+                    android:id="@+id/tvCarName"
+
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:textSize="@dimen/dp24"
+                    android:textColor="@color/black"
+                    android:text=""/>
+
+            <TextView
+                android:layout_below="@+id/tvCarName"
+                android:id="@+id/tvInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp40"
+                android:textSize="@dimen/dp20"
+                android:textColor="@color/black"
+                android:text=""/>
+
+            <Button
+                android:id="@+id/btn_active"
+                android:layout_above="@+id/btn_not_now"
+                android:layout_margin="@dimen/dp10"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/dp10"
+                android:background="@drawable/my_car_blue_btn_select"
+                android:text="激活车机"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/sp20"
+                android:layout_height="@dimen/dp50" />
+
+            <Button
+                android:id="@+id/btn_not_now"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="@dimen/dp10"
+                android:layout_width="match_parent"
+                android:background="@drawable/my_car_blue_btn_select"
+                android:text="以后再说"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/sp20"
+                android:layout_height="@dimen/dp50" />
+
+            <Button
+                android:id="@+id/btn_try_again"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/dp20"
+                android:layout_width="match_parent"
+                android:background="@drawable/my_car_blue_btn_select"
+                android:text="重试"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/sp20"
+                android:layout_height="@dimen/dp50" />
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+
+
+</LinearLayout>

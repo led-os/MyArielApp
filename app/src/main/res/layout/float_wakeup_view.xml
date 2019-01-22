@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout android:id="@+id/voice_out_app"
+        android:layout_width="@dimen/float_wakeup_out_app_width"
+        android:layout_height="@dimen/float_wakeup_out_app_height"
+        android:background="@drawable/float_view_out_app_bg"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:visibility="gone">
+        <FrameLayout android:id="@+id/wakeup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/float_view_out_app_voice">
+            <com.qinggan.app.widget.voiceLinePulse.LinePulseView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </FrameLayout>
+        <ImageView android:id="@+id/back_to_app"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/float_view_out_app_back_to_app"
+            android:layout_marginTop="@dimen/dp14"/>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/voice_in_app"
+        android:layout_width="@dimen/float_wakeup_in_app_width"
+        android:layout_height="@dimen/float_wakeup_in_app_width"
+        android:background="@drawable/float_view_in_app"
+        android:gravity="center_horizontal">
+        <com.qinggan.app.widget.voiceLinePulse.LinePulseView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp12"
+            android:scaleX="1.2"
+            android:scaleY="1.2"/>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_chat"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/black"
+    android:layout_height="match_parent"
+    tools:ignore="MissingDefaultResource">
+
+    <RelativeLayout
+        android:id="@+id/relat_top"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/profile_shape"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/delete_image"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="17dp"
+                android:layout_marginLeft="17dp"
+                android:src="@mipmap/delete_icon"/>
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:background="@mipmap/qingjingmoshi"
+                android:layout_marginTop="60dp"
+                />
+
+                <TextView
+                    android:id="@+id/select_profile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:text="选择情景模式"
+                    android:textColor="@color/text_while"
+                    android:textSize="27sp" />
+
+                <ImageView
+                    android:id="@+id/remind_image"
+                    android:layout_marginTop="50dp"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/voise"/>
+
+                <android.support.v7.widget.RecyclerView
+                    android:layout_marginTop="70dp"
+                    android:id="@+id/recycle_profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <!--<RelativeLayout-->
+    <!--android:id="@+id/relat_bot"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_weight="7"-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:layout_marginBottom="10dp"-->
+    <!--android:layout_height="match_parent">-->
+    <!--<EditText-->
+    <!--android:id="@+id/ed_chat"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_marginLeft="15dp"-->
+    <!--android:layout_marginRight="15dp"-->
+    <!--android:hint="您可以回复或者忽略"-->
+    <!--android:textColorHint="#FFF"-->
+    <!--android:textSize="20sp"-->
+    <!--android:gravity="center"-->
+    <!--android:paddingRight="10dp"-->
+    <!--android:paddingLeft="10dp"-->
+    <!--android:background="@drawable/shape_ed_line"/>-->
+    <!--</RelativeLayout>-->
+
+</LinearLayout>

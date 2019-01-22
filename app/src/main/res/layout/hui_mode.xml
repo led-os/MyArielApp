@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.qinggan.app.arielapp.minor.phone.view.MultiDirectionSlidingDrawer
+        xmlns:my="http://schemas.android.com/apk/res/com.qinggan.app.arielapp"
+        android:id="@+id/drawer"
+        android:layout_width="match_parent"
+        android:layout_height="640dp"
+        my:content="@+id/content"
+        my:direction="topToBottom"
+        my:handle="@+id/handle">
+
+        <include
+            android:id="@id/content"
+            layout="@layout/hui_layout" />
+
+        <LinearLayout
+            android:id="@id/handle"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center|bottom"
+            android:background="@drawable/bg_radius">
+            <ImageView
+                android:id="@+id/hui_expand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="20dp"
+                android:src="@drawable/hui_xl" />
+        </LinearLayout>
+
+
+    </com.qinggan.app.arielapp.minor.phone.view.MultiDirectionSlidingDrawer>
+</LinearLayout>

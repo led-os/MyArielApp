@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rltop"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"
+        android:layout_marginTop="@dimen/dp40">
+
+        <ImageView
+            android:id="@+id/back_btn"
+            android:layout_width="@dimen/dp50"
+            android:layout_height="@dimen/dp50"
+            android:layout_marginLeft="@dimen/dp10"
+
+            android:background="@drawable/home_icon_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="我的车辆"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/sp20" />
+        <!--        <TextView
+                    android:id="@+id/txtCarStatus"
+                    android:gravity="center"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="@dimen/dp120"
+                    android:layout_height="@dimen/dp30"
+                    android:textSize="@dimen/dp16"
+                    android:background="@drawable/pack_textbg"
+                    android:textColor="@android:color/black"
+                    android:text="车辆已绑定"/>-->
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_unbind"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/dp20"
+        android:layout_marginTop="@dimen/dp10"
+        android:layout_marginRight="@dimen/dp20"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ivCar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dp80"
+                android:adjustViewBounds="true"
+                android:background="@drawable/pic_car"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ivCar"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dp40"
+                android:text="您还没有绑定您的车辆"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/dp20" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_bind"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp55"
+            android:layout_marginLeft="@dimen/dp20"
+            android:layout_marginTop="@dimen/dp40"
+            android:layout_marginRight="@dimen/dp20"
+            android:background="@drawable/my_car_blue_btn_select"
+            android:text="现在绑定"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/sp16" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/ll_bind"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f6f6f6"
+        android:layout_marginTop="@dimen/dp20"
+
+        android:visibility="invisible">
+
+    <RelativeLayout
+        android:id="@+id/rlinfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff">
+
+        <LinearLayout
+            android:id="@+id/llinfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/cardbg"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/dp15"
+            android:layout_marginRight="@dimen/dp15"
+            android:layout_marginBottom="@dimen/dp20"
+            android:paddingLeft="@dimen/dp20"
+            android:paddingTop="@dimen/dp10"
+            android:paddingRight="@dimen/dp20"
+            android:paddingBottom="@dimen/dp10">
+
+            <TextView
+                android:id="@+id/txtCarName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="宝骏 Control"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/dp26"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp50"
+                android:layout_marginTop="@dimen/dp10">
+
+                <TextView
+                    android:id="@+id/labelVin"
+                    android:layout_width="@dimen/dp80"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="车架号"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/dp18" />
+
+                <TextView
+                    android:id="@+id/txtVin"
+                    android:layout_width="@dimen/dp240"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dp20"
+                    android:layout_toRightOf="@+id/labelVin"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/dp20" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="#888888" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp50"
+                android:layout_marginTop="@dimen/dp10">
+
+                <TextView
+                    android:id="@+id/txtEngine"
+                    android:layout_width="@dimen/dp80"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="发动机号"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/dp18" />
+
+                <com.qinggan.app.arielapp.minor.main.commonui.EditClear2
+                    android:id="@+id/etEngine"
+                    android:layout_width="@dimen/dp240"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dp18"
+                    android:layout_toRightOf="@+id/txtEngine"
+                    android:padding="@dimen/dp2" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#888888" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp50"
+                android:layout_marginTop="@dimen/dp10">
+
+                <TextView
+                    android:id="@+id/txtCarNo"
+                    android:layout_width="@dimen/dp80"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="车牌号码"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/dp18" />
+
+                <com.qinggan.app.arielapp.minor.main.commonui.EditClear2
+                    android:id="@+id/etCarNo"
+                    android:layout_width="@dimen/dp240"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dp20"
+                    android:layout_toRightOf="@+id/txtCarNo"
+                    android:padding="@dimen/dp2" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="#888888" />
+        </LinearLayout>
+    </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/flaction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rlinfo"
+            android:layout_marginTop="@dimen/dp10">
+
+            <LinearLayout
+                android:id="@+id/ll_active_sim"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtActiveSimTip1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp16"
+                    android:text="未激活车机"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/dp20"
+                    android:visibility="gone" />
+                <!--   <TextView
+                       android:id="@+id/txtActiveSimTip2"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:textSize="@dimen/dp18"
+                       android:textColor="@android:color/black"
+                       android:text="@string/sim_active_tip1"/>-->
+                <RelativeLayout
+                    android:id="@+id/btn_active_sim"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp60"
+                    android:background="@drawable/operator_area_shape_bg"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/txt_active_sim"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dp10"
+                        android:text="马上激活 "
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/dp20" />
+
+                    <ImageView
+                        android:layout_width="@dimen/dp30"
+                        android:layout_height="@dimen/dp30"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/dp10"
+                        android:background="@drawable/home_icon_more"
+
+                        android:scaleType="fitStart" />
+                </RelativeLayout>
+                <!--  <Button
+                      android:id="@+id/btn_active_sim"
+                      android:layout_width="match_parent"
+                      android:layout_marginLeft="@dimen/dp10"
+                      android:layout_marginRight="@dimen/dp10"
+                      android:layout_marginTop="@dimen/dp10"
+                      android:background="@drawable/logbutton"
+                      android:text="@string/mycar_btn_active_sim1"
+                      android:textColor="#ffffff"
+                      android:textSize="@dimen/sp20"
+                      android:layout_height="52dp" />-->
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_control"
+                android:background="#ffffff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:background="#f6f6f6"
+                    android:includeFontPadding="true"
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp40"
+                    android:paddingLeft="@dimen/dp20"
+                    android:text="SIM卡已激活"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/dp20" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/operator_area_shape_bg"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/rlBlueKey"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp60">
+
+                        <ImageView
+                            android:id="@+id/ivBlueKey"
+                            android:layout_width="@dimen/dp20"
+                            android:layout_height="@dimen/dp20"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/dp10"
+                            android:background="@drawable/mycar_icon_bluetooth"
+
+                            android:scaleType="fitStart" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/dp10"
+                            android:layout_toRightOf="@+id/ivBlueKey"
+                            android:text="蓝牙钥匙"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/dp20" />
+
+                        <com.qinggan.app.arielapp.ui.bluekey.SettingSwitcher
+                            android:id="@+id/switcher"
+                            android:layout_width="@dimen/dp55"
+                            android:layout_height="@dimen/dp30"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/dp10"
+                            android:background="@android:color/transparent"
+                            android:clickable="true"
+                            android:enabled="true"
+                            android:focusable="true" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rlBlePop"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp60">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+
+                            android:layout_marginLeft="@dimen/dp40"
+                            android:text="成功连接弹出解锁卡片"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/dp20" />
+
+                        <com.qinggan.app.arielapp.ui.bluekey.SettingSwitcher
+                            android:id="@+id/switcher_pop"
+                            android:layout_width="@dimen/dp55"
+                            android:layout_height="@dimen/dp30"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/dp10"
+                            android:background="@android:color/transparent"
+                            android:clickable="true"
+                            android:enabled="true"
+                            android:focusable="true" />
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.1dp"
+                        android:background="#888888" />
+
+                    <RelativeLayout
+                        android:id="@+id/rlCarControl"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp60">
+
+                        <ImageView
+                            android:id="@+id/ivControl"
+                            android:layout_width="@dimen/dp20"
+                            android:layout_height="@dimen/dp20"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/dp10"
+                            android:background="@drawable/mycar_icon_long_range_control"
+                            android:scaleType="fitStart" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/dp10"
+                            android:layout_toRightOf="@+id/ivControl"
+                            android:text="远程车控"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/dp20" />
+
+                        <TextView
+                            android:id="@+id/txtControlAction"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/dp10"
+                            android:text="修改安全码 >"
+                            android:textColor="@android:color/darker_gray"
+                            android:textSize="@dimen/dp18" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/btn_unbind"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp60"
+            android:layout_below="@+id/flaction"
+            android:layout_marginTop="@dimen/dp20"
+            android:background="#ffffff"
+            android:text="取消绑定"
+            android:textColor="#cc0000"
+            android:textSize="@dimen/sp18" />
+    </RelativeLayout>
+
+</LinearLayout>

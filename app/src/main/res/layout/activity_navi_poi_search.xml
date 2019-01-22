@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/navi_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/search_lay"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp53"
+        android:layout_marginLeft="@dimen/dp13"
+        android:layout_marginTop="@dimen/dp40"
+        android:layout_marginRight="@dimen/dp13"
+        android:alpha="0.7"
+        android:background="@drawable/search_bg">
+
+        <RelativeLayout
+            android:id="@+id/rl_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="@dimen/dp20"
+                android:layout_height="@dimen/dp20"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="17dp"
+                android:layout_marginRight="@dimen/dp17"
+                android:src="@drawable/back_select" />
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/et_search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@id/iv_navi_voice_icon"
+            android:layout_toRightOf="@id/rl_back"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="你想去哪儿？"
+            android:imeOptions="actionSearch"
+            android:singleLine="true"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/sp20" />
+
+        <ImageView
+            android:id="@+id/iv_navi_voice_icon"
+            android:layout_width="@dimen/dp40"
+            android:layout_height="@dimen/dp40"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp17"
+            android:layout_marginRight="@dimen/dp17"
+            android:src="@mipmap/navi_icon_yyicon" />
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycle_search_result"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/dp25" />
+</LinearLayout>

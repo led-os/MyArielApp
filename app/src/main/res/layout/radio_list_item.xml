@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="93dp"
+    android:background="@drawable/radio_item_press"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="24dp">
+
+        <ImageView
+            android:id="@+id/raido_list_image"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/radio_sequence_normal" />
+
+        <ImageView
+            android:id="@+id/raido_list_image_select"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/sequence_high"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/radio_list_index"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="1"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/radio_list_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="音乐之声"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/radio_list_time"
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="07:00-09:00"
+            android:textColor="@color/white50"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

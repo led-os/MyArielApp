@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/voice_weather_root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/voice_main_bg"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/voice_weather_layout_top">
+        <View
+            android:layout_width="@dimen/voice_nav_back_bg_width"
+            android:layout_height="@dimen/voice_nav_back_bg_height"
+            android:layout_marginLeft="@dimen/voice_nav_back_bg_left"
+            android:id="@+id/voice_weather_close"/>
+        <ImageView
+            android:layout_width="@dimen/voice_nav_back_width"
+            android:layout_height="@dimen/voice_nav_back_height"
+            android:layout_marginLeft="@dimen/voice_nav_back_left"
+            android:background="@drawable/voice_colse"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/weather_frag_title"
+            android:lines="2"
+            android:textSize="@dimen/voice_weather_title_size"
+            android:lineSpacingExtra="@dimen/voice_weather_title_span"
+            android:textColor="@color/white"
+            android:gravity="center_horizontal"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/voice_weather_content_top"
+        android:layout_marginLeft="@dimen/voice_weather_content_left"
+        android:layout_marginRight="@dimen/voice_weather_content_right"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/voice_weather_content_padding">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/voice_weather_layout"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+                <ImageView
+                    android:layout_width="@dimen/voice_weather_icon_width"
+                    android:layout_height="@dimen/voice_weather_icon_height"
+                    android:id="@+id/voice_weather_icon"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/voice_weather_temp"
+                    android:layout_marginLeft="@dimen/voice_weather_temp_left"
+                    android:lines="1"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/voice_weather_temp_size"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/voice_weather_city"
+                    android:layout_marginLeft="@dimen/voice_weather_city_left"
+                    android:lines="1"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/voice_weather_city_text_size"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/voice_weather_status"
+                android:layout_below="@id/voice_weather_layout"
+                android:layout_marginTop="@dimen/voice_weather_status_top"
+                android:lines="1"
+                android:textColor="@color/white"
+                android:textSize="@dimen/voice_weather_status_text_size"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/voice_weather_wind"
+                android:layout_below="@id/voice_weather_status"
+                android:layout_marginTop="@dimen/voice_weather_wind_top"
+                android:lines="1"
+                android:textColor="@color/white"
+                android:textSize="@dimen/voice_weather_wind_text_size"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/voice_weather_pm25"
+                android:layout_below="@id/voice_weather_layout"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="@dimen/voice_weather_pm_top"
+                android:lines="1"
+                android:textColor="@color/white"
+                android:textSize="@dimen/voice_weather_pm_text_size"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/voice_weather_line_height"
+            android:background="@color/voice_weather_line_color"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/voice_weather_recyclerview"
+            android:background="@color/transparent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+        </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+
+</LinearLayout>

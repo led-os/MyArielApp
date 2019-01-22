@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_marginTop="@dimen/dp30"
+        android:id="@+id/back_btn"
+        android:background="?android:attr/selectableItemBackground"
+        android:layout_width="@dimen/dp60"
+        android:layout_height="@dimen/dp60"
+        android:layout_marginLeft="@dimen/dp8"
+        >
+        <ImageView
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/icon_back"
+            android:textSize="@dimen/dp24" />
+    </RelativeLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="28dp"
+        android:text="验证码登录"
+        android:textColor="@color/black"
+        android:textSize="30sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="18dp"
+        android:text="欢迎登录羚机客户端"
+        android:textColor="@color/gary_a0"
+        android:textSize="12sp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="33dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="63dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/phone_hint_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="手机号码格式错误"
+                android:textColor="#FFFF6825"
+                android:textSize="12sp"
+                android:visibility="invisible" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/phone_hint_text"
+                android:layout_marginBottom="4dp"
+                android:drawablePadding="10dp"
+                android:drawableRight="@mipmap/icon_more"
+                android:gravity="center"
+                android:text="+86"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <com.qinggan.app.arielapp.minor.main.commonui.EditClear
+                android:id="@+id/phone_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="58.33dp"
+                android:padding="@dimen/dp2" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="35dp"
+                android:background="@color/mine_name_shape_color" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_marginRight="35dp"
+            android:layout_width="match_parent"
+            android:layout_height="63dp"
+            android:layout_marginTop="16.67dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/edt_code_hint_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="验证码错误或已过期"
+                android:textColor="#FFFF6825"
+                android:textSize="12sp"
+                android:visibility="invisible" />
+
+            <com.qinggan.app.arielapp.minor.main.commonui.EditClear
+                android:id="@+id/yezhengma_txt"
+                android:layout_toLeftOf="@+id/get_login_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edt_code_hint_text"
+                android:layout_marginBottom="6dp"
+                android:gravity="left"
+                android:padding="@dimen/dp2" />
+
+            <View
+                android:layout_toLeftOf="@+id/get_login_code"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:background="@color/mine_name_shape_color" />
+
+            <TextView
+                android:layout_alignParentRight="true"
+                android:id="@+id/get_login_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="2dp"
+                android:background="@drawable/getcode_btn_select"
+                android:gravity="center"
+                android:enabled="false"
+                android:text="@string/get_verification_code"
+                android:textColor="@color/gary_9d"
+                android:textSize="@dimen/sp16"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/login_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/login_btn_select"
+        android:gravity="center"
+        android:text="@string/login"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/sp20" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:text="未注册的手机号码验证后自动创建车机账号"
+        android:textColor="@color/gary_a0"
+        android:textSize="12sp" />
+</LinearLayout>

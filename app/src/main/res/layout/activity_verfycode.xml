@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="listener"
+            type="com.qinggan.app.arielapp.ui.pin.check.VerfyPinActivity" />
+    </data>
+
+    <RelativeLayout
+        android:id="@+id/verfy_code_root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background">
+
+        <RelativeLayout
+            android:id="@+id/head_rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18.33dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="40dp">
+
+            <TextView
+                android:id="@+id/head_back_icon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/back_btn_select"
+                android:onClick="@{listener::onClick}"
+                android:textSize="@dimen/dp24" />
+
+            <TextView
+                android:id="@+id/head_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/v_code"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dp19" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/input_code_rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/head_rl"
+            android:layout_marginTop="@dimen/dp52">
+
+            <TextView
+                android:id="@+id/tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp38"
+                android:includeFontPadding="false"
+                android:lineSpacingExtra="@dimen/dp15"
+                android:text="@string/v_code1"
+                android:textColor="#FFFFFFFF"
+                android:textSize="@dimen/dp30" />
+
+            <TextView
+                android:id="@+id/tip_err"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tip"
+                android:layout_marginLeft="@dimen/dp41"
+                android:layout_marginTop="@dimen/dp30"
+                android:textColor="#FFFF6825"
+                android:textSize="@dimen/dp12"
+                android:visibility="invisible" />
+
+            <com.qinggan.app.arielapp.ui.widget.code.VerificationCodeView
+                android:id="@+id/codeView"
+                android:layout_width="@dimen/dp278"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tip_err"
+                android:layout_centerHorizontal="true"
+                app:vcv_code_color="@android:color/white"
+                app:vcv_code_number="4"
+                app:vcv_code_size="@dimen/dp20"
+                app:vcv_code_width="@dimen/dp50" />
+
+            <Button
+                android:id="@+id/forget_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/codeView"
+                android:layout_alignParentRight="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dp20"
+                android:layout_marginRight="@dimen/dp40"
+                android:background="@null"
+                android:gravity="center"
+                android:onClick="@{listener::onClick}"
+                android:text="@string/v_code3"
+                android:textColor="#FFFFFFFF"
+                android:textSize="@dimen/dp16" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/over_max_rl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/head_rl"
+            android:layout_marginLeft="@dimen/dp38"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/over_max_tip_err"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dp52"
+                android:text="@string/v_code4"
+                android:textColor="#FFFF6825"
+                android:textSize="@dimen/dp30" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp15"
+                android:text="@string/v_code5"
+                android:textColor="#FFFFFFFF"
+                android:textSize="@dimen/dp30" />
+
+            <Button
+                android:id="@+id/over_max_findback_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp43"
+                android:background="@null"
+                android:onClick="@{listener::onClick}"
+                android:text="@string/v_code3"
+                android:textColor="#FFFFFFFF"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </RelativeLayout>
+</layout>

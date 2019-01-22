@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="listener"
+            type="com.qinggan.app.arielapp.ui.bluekey.ForverKeyActivity" />
+    </data>
+
+    <ScrollView
+        android:id="@+id/forver_key_root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp55"
+                android:src="@drawable/icon_key2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp14"
+                android:text="恭喜获得"
+                android:textColor="#090909"
+                android:textSize="18.67sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp3"
+                android:text="永久手机钥匙"
+                android:textColor="#E29C30"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp23"
+                android:text="现在您可以"
+                android:textColor="#090909"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dp10"
+                android:gravity="center"
+                android:lineSpacingExtra="@dimen/dp15"
+                android:text="@string/key1"
+                android:textColor="#9D9D9D"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/regist"
+                android:layout_width="286dp"
+                android:layout_height="@dimen/dp48"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="21dp"
+                android:background="@drawable/key_btn_light"
+                android:onClick="@{listener::onClick}"
+                android:text="升级车主获取更多权限"
+                android:textColor="#FFFFFFFF"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp13"
+                android:gravity="center"
+                android:lineSpacingExtra="@dimen/dp15"
+                android:text="@string/key2"
+                android:textColor="#9D9D9D"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/later"
+                android:layout_width="286dp"
+                android:layout_height="@dimen/dp48"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/dp36"
+                android:background="@drawable/key_btn_gray"
+                android:onClick="@{listener::onClick}"
+                android:text="以后再说"
+                android:textColor="#343434"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+    </ScrollView>
+</layout>

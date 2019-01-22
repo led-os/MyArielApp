@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.qinggan.app.arielapp.minor.main.commonui.pullextend.SoPullExtendLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pull_extend"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#202021"
+    android:gravity="center_horizontal">
+
+    <com.qinggan.app.arielapp.minor.main.commonui.pullextend.ExtendListHeader
+        android:id="@+id/extend_header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp200"
+        android:layout_gravity="center" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/drivermode_bg"
+        android:clickable="true">
+
+        <TextView
+            android:id="@+id/time_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp102"
+            android:text="14:38"
+            android:textColor="#FFFFFFFF"
+            android:textSize="@dimen/sp66"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/date_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/time_txt"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp10"
+            android:text="11月23日  星期五"
+            android:textColor="#FFFFFFFF"
+            android:textSize="@dimen/sp16" />
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/date_txt"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp159"
+            >
+        <com.qinggan.app.arielapp.minor.main.commonui.BattaryView
+            android:id="@+id/battar_pro"
+            android:layout_width="@dimen/dp35"
+            android:layout_height="@dimen/dp67"
+            android:background="@drawable/driving_mode_icon_buttery"
+            android:paddingLeft="@dimen/dp4"
+            android:paddingRight="@dimen/dp5"
+            android:paddingTop="@dimen/dp2"
+            android:paddingBottom="@dimen/dp3" />
+            <ImageView
+                android:id="@+id/power_img"
+                android:layout_width="@dimen/dp35"
+                android:layout_height="@dimen/dp67"
+                android:layout_gravity="center"
+                android:background="@drawable/driving_mode_icon_buttery_charge"
+                />
+        </FrameLayout>
+        <LinearLayout
+            android:id="@+id/bottom_card"
+            android:layout_width="@dimen/dp283"
+            android:layout_height="@dimen/dp80"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/dp37"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/left_icon"
+                android:layout_width="@dimen/dp54"
+                android:layout_height="@dimen/dp54"
+                android:layout_marginTop="@dimen/dp3" />
+
+            <LinearLayout
+                android:layout_width="@dimen/dp189"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/top_content"
+                    android:layout_width="@dimen/dp165"
+                    android:layout_height="@dimen/dp23"
+                    android:layout_marginLeft="@dimen/dp12"
+                    android:text="They Say Dub"
+                    android:textColor="#FFFFFF"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:textSize="@dimen/dp20"/>
+
+                <TextView
+                    android:id="@+id/bottom_content"
+                    android:layout_width="@dimen/dp165"
+                    android:layout_height="@dimen/dp16"
+                    android:layout_marginLeft="@dimen/dp12"
+                    android:text="Paul Simon"
+                    android:layout_marginTop="@dimen/dp12"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/dp12"/>
+
+                <TextView
+                    android:id="@+id/whole_content"
+                    android:layout_width="@dimen/dp165"
+                    android:layout_height="@dimen/dp23"
+                    android:layout_marginLeft="@dimen/dp12"
+                    android:text="Paul Simon"
+                    android:ellipsize="end"
+                    android:layout_marginTop="@dimen/dp15"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/dp20"
+                    android:maxLines="1"
+                    android:visibility="gone"/>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/right_icon"
+                android:layout_marginTop="@dimen/dp8"
+                android:layout_width="@dimen/dp40"
+                android:layout_height="@dimen/dp40"
+                android:layout_marginLeft="@dimen/dp12" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</com.qinggan.app.arielapp.minor.main.commonui.pullextend.SoPullExtendLayout>
+
+

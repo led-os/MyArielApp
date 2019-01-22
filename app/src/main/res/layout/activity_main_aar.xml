@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello World!"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/test_btn1"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="第一个"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/test_btn2"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="第二个"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/test_btn3"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="第三个"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/wechat_appname"
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:hint="appname"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/wechat_address"
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:hint="appaddress : 收件人" />
+
+        <EditText
+            android:id="@+id/wechat_action"
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:hint="action : 意图" />
+
+        <Button
+            android:id="@+id/test_btn4"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="连续操作----发定位" />
+
+        <Button
+            android:id="@+id/test_btn5"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="连续操作----发红包" />
+
+        <Button
+            android:id="@+id/test_btn6"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="连续操作----发消息" />
+
+        <Button
+            android:id="@+id/test_btn8"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="分步操作----搜索联系人" />
+
+        <Button
+            android:id="@+id/test_btn9"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="分步操作----选择联系人" />
+
+        <Button
+            android:id="@+id/test_btn10"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="分步操作----发消息" />
+
+        <Button
+            android:id="@+id/test_btn11"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="分步操作----发定位" />
+
+        <Button
+            android:id="@+id/test_btn12"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="分步操作----发红包" />
+
+        <Button
+            android:id="@+id/test_btn7"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="返回主界面" />
+
+        <TextView
+            android:id="@+id/noti_txt"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+</ScrollView>

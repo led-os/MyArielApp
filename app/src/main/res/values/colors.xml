@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <!--<color name="background">#1aFFFFFF</color>-->
+    <color name="colorAccent">@color/color_bea266</color>
+    <color name="base_color">@color/color_bea266</color>
+    <color name="background">#1aFFFFFF</color>
+    <color name="background_start">#121215</color>
+    <color name="background_end">#2B2B2B</color>
+    <color name="transparent">#00000000</color>
+    <color name="color_black">#000000</color>
+    <color name="bgColor">#1aFFFFFF</color>
+    <color name="msg_unRead">#4aFFFFFF</color>
+    <color name="msg_read">#1aFFFFFF</color>
+    <color name="line_color">#1AFFFFFF</color><!--%10的白-->
+    <color name="mine_center_default_color">#ffffff</color>
+
+
+    <color name="white_text">#fafafa</color>
+
+    <color name="white_bg_f6">#F6F6F6</color>
+    <color name="blue_text">#0039EF</color>
+    <color name="gray_text">#9b9b9b</color>
+
+    <color name="white_alpha50">#80ffffff</color>
+
+    <color name="white03">#08FFFFFF</color>
+
+    <color name="white05">#0DFFFFFF</color><!--%5的白--><!--提醒登录的进度条颜色-->
+    <color name="white06">#0FFFFFFF</color><!--%6的白-->
+    <color name="white10">#1aFFFFFF</color><!--%10的白-->
+    <color name="white20">#33FFFFFF</color><!--%20的白-->
+    <color name="white30">#4dFFFFFF</color><!--%30的白-->
+    <color name="white50">#80ffffff</color><!--50%白-->
+    <color name="white80">#ccffffff</color><!--80%白-->
+    <color name="white70">#B3ffffff</color><!--70%白-->
+
+    <color name="black60">#66000000</color> <!--%60黑-->
+    <color name="black50">#80000000</color> <!--%50黑-->
+    <color name="black80">#cc000000</color>
+
+    <color name="loading">#10FFFFFF</color>
+    <color name="loading1">#A11F4E</color>
+    <color name="loading2">#885229</color>
+
+    <color name="text_normal">#666666</color>
+    <color name="text_important">#333333</color>
+    <color name="color_dark_grey">#808080</color>
+
+    <color name="eighty_percent_white">#ccffffff</color>
+    <color name="half_trasparent_white">#7fffffff</color>
+
+    <color name="red">#FFD50000</color>
+    <color name="green">#FF1FA129</color>
+    <color name="gray">#888888</color>
+    <color name="black">#000000</color>
+    <color name="black70">#B3000000</color>
+    <color name="blue">#FF2196F3</color>
+    <color name="float_view_blue">#3E54FF</color>
+
+    <color name="color_flow_normal">#1FA129</color>
+    <color name="color_flow_delay_more">#FF1234</color>
+    <color name="color_flow_delay_little">#F5A623</color>
+    <color name="color_flight_type_plan">#0CA624</color>
+    <color name="color_flight_type_delay">#D50000</color>
+    <color name="color_flight_type_warn">#F5A623</color>
+
+    <color name="status_red">#ffd32f2f</color>
+    <color name="status_green">#ff4d9437</color>
+    <color name="status_yellow">#ffed631c</color>
+    <color name="status_while">#ffffffff</color><!--纯白-->
+
+    <color name="color_212121">#ff212121</color>
+    <color name="color_a0ffffff">#a0ffffff</color>
+
+    <color name="hotel_days_selector">#33000000</color>
+
+    <color name="scene_background">#ff161C22</color>
+    <color name="bg_hotel_order_pay">#33000000</color>
+    <color name="highlight_pressed_color">#ff1d86da</color>
+    <color name="color_btn_cancel">#393939</color>
+    <color name="colorRoundProgressBarCircle">#f0fafafa</color>
+    <color name="parking_yellow">#ffc107</color>
+
+    <color name="color_957a40">#957A40</color>
+    <color name="color_bea266">#BEA266</color>
+    <color name="color_282624">#282624</color>
+
+    <color name="voice_weather_line_color">#000000</color>
+    <color name="voice_weather_content_color">#33000000</color>
+
+ 
+   <color name="color_line_gray">#e6e6e6</color>
+   <!--<color name="blue">#479239</color>-->
+   <color name="rl_draw">#282828</color>
+   <color name="background_blue">#1173CB</color>
+   <color name="text_while">#ffffff</color>
+   <color name="grary">#30000000</color>
+   <color name="music">#de5800</color>
+   <color name="text_gray">#80777777</color>
+    <color name="click_bg">#4FB3FB</color>
+    <color name="no_click_bg">#FFFFFFFF</color>
+
+    <color name="nav_detail_bg_color">#3D3D3D</color>
+    <color name="black_alpha_80">#CD000000</color>
+    <color name="white_alpha_10">#19FFFFFF</color>
+
+    <!--MUSIC-->
+    <color name="music_text_color">#2e81eb</color>
+    <color name="pop_backgound">#FA1f1f1f</color>
+
+    <color name="main_button_select_color">#535353</color>
+    <color name="main_button_noselect_color">#404040</color>
+    <color name="battary_color">#E6467500</color>
+    <color name="mine_lines_color">#DFDFDF</color>
+    <color name="mine_name_shape_color">#D6D6D6</color>
+    <color name="gary_a0">#A0A0A0</color>
+    <color name="gary_cb">#CBCBCB</color>
+    <color name="gary_b8">#B8B8B8</color>
+    <color name="gary_9d">#9D9D9D</color>
+    <color name="gary_44">#444444</color>
+    <color name="wake_up_blue_text">#0A94FF</color>
+</resources>

@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.qinggan.app.arielapp"
+    android:versionCode="100"
+    android:versionName="1.0.0">
+
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL" />
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS" />
+
+    <!-- 显示系统窗口权限 -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <!-- 在 屏幕最顶部显示addview -->
+    <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW" />
+
+    <!-- phone -->
+    <!-- 读联系人权限 -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <!-- 写联系人权限 -->
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <!-- 拨号权限 -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" />
+    <uses-permission android:name="android.permission.ANSWER_PHONE_CALLS" />
+    <uses-permission android:name="android.permission.REORDER_TASKS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:name=".ArielApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme_main"
+        tools:replace="android:icon,android:roundIcon,android:theme,android:label,android:allowBackup">
+        <activity
+            android:name=".SplashActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+                <action android:name="android.hardware.usb.action.USB_ACCESSORY_ATTACHED"/>
+            </intent-filter>
+            <meta-data
+                android:name="android.hardware.usb.action.USB_ACCESSORY_ATTACHED"
+                android:resource="@xml/accessory_filter"/>
+        </activity>
+
+        <receiver
+            android:name="com.qinggan.bluekey.service.BootBroadcastReceiver"
+            android:enabled="true"
+            android:process=":BootReceiver"
+            android:exported="true">
+            <intent-filter android:priority="1000">
+                <action android:name="android.intent.action.BOOT_COMPLETED"></action>
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".HUIActivity"
+            android:theme="@style/SampleTheme" />
+        <activity
+            android:name=".MainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".minor.main.navigation.DestinatorActivity"
+            android:theme="@style/SampleTheme" />
+        <activity
+            android:name=".minor.main.navigation.SearchActivity"
+            android:theme="@style/SampleTheme" />
+        <activity android:name=".TestAarActivity" />
+        <activity
+            android:name=".user.activity.LoginActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/SampleTheme" />
+        <activity
+            android:name=".minor.commonui.FullScreenDialog"
+            android:exported="true"
+            android:theme="@style/loading_dialog" />
+
+        <!-- 百度定位SDK  service  BEGIN -->
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" />
+
+        <!-- phone -->
+        <activity
+            android:name=".ui.bluekey.BindCarActivity"
+            android:theme="@style/SampleTheme" />
+        <activity
+            android:name=".ui.bluekey.MyCarActivity"
+            android:theme="@style/SampleTheme" />
+        <activity
+            android:name=".ui.bluekey.ActiveCarActivity"
+            android:theme="@style/SampleTheme" />
+
+        <!-- phone -->
+        <activity
+            android:name=".minor.phone.ui.PhoneMainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SampleTheme" />
+        <activity
+            android:name=".minor.phone.ui.PhoneContactsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SampleTheme"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <!-- PIN -->
+        <activity
+            android:name=".ui.pin.add.AddPinActivity"
+            android:theme="@style/SampleTheme" />
+        <activity
+            android:name=".ui.pin.check.VerfyPinActivity"
+            android:theme="@style/SampleTheme" />
+        <activity
+            android:name=".ui.pin.findback.FindbackPinActivity"
+            android:theme="@style/SampleTheme" />
+        <activity
+            android:name=".user.activity.AddressActivity"
+            android:theme="@style/SampleTheme" />
+        <activity
+            android:name=".user.activity.AboutActivity"
+            android:theme="@style/SampleTheme" />
+        <activity
+            android:name=".user.activity.WakeupSetActivity"
+            android:theme="@style/SampleTheme" />
+        <activity
+            android:name=".user.activity.VersionUpgradeActivity"
+            android:theme="@style/SampleTheme" />
+        <activity
+            android:name=".minor.wechat.WeChatTranslucentActivity"
+            android:launchMode="singleInstance"
+            android:theme="@style/TransparentTheme" />
+        <activity
+            android:name=".minor.wechat.WeChatTransparentTmpActivity"
+            android:launchMode="singleInstance"
+            android:theme="@style/TransparentTheme" />
+        <activity
+            android:name=".minor.wechat.WeChatSendMsgActivity"
+            android:launchMode="singleInstance"
+            android:theme="@style/TransparentTheme" />
+
+        <activity
+            android:name=".VoiceDcsActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/SampleTheme" />
+
+        <activity
+            android:name=".VoiceNewsActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/SampleTheme" />
+
+        <activity
+            android:name=".minor.radio.FMActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/SampleTheme" />
+
+        <activity
+            android:name=".minor.scenario.SceneActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/SampleTheme" />
+
+        <service android:name=".minor.integration.MusicDamoService" />
+        <service
+            android:name="com.qinggan.bluekey.service.BlueKeyService"
+            android:enabled="true"
+            android:process=":ble">
+            <intent-filter>
+                <action android:name="com.qinggan.bluekey.service.BlueKeyService" />
+            </intent-filter>
+        </service>
+        <service android:name=".minor.phone.service.ArielPhoneService" />
+
+        <activity
+            android:name=".minor.main.mui.TestActivity"
+            android:theme="@style/SampleTheme" />
+        <activity
+            android:name=".minor.main.mui.vehicletest.VehicleTestActivity"
+            android:theme="@style/SampleTheme" />
+        <activity
+            android:name=".minor.main.mui.navitest.TestNaviActivity"
+            android:theme="@style/SampleTheme" />
+        <activity
+            android:name=".minor.main.mui.huitest.TestHuiActivity"
+            android:theme="@style/SampleTheme" />
+
+        <service android:name=".voiceview.VoiceFloatViewService" />
+
+        <activity
+            android:name=".WheelControl.view.FullScreenVolumeControl"
+            android:theme="@style/SampleTheme" />
+        <activity
+            android:name=".WheelControl.view.FullScreenVolumeMute"
+            android:theme="@style/SampleTheme" />
+        <activity
+            android:name=".minor.main.mui.MyCenterActivity"
+            android:theme="@style/SampleTheme" />
+        <activity
+            android:name=".minor.main.navigation.NavPoiSearchActivity"
+            android:theme="@style/SampleTheme" />
+        <activity
+            android:name=".minor.main.navigation.NavigationActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/SampleTheme" />
+        <activity
+            android:name=".minor.main.navigation.NavShowPresetDestActivity"
+            android:theme="@style/SampleTheme" />
+
+        <!-- 启动service -->
+        <service
+            android:name=".InitializeService"
+            android:enabled="true" />
+
+        <activity
+            android:name="com.qinggan.app.arielapp.ReversingRadarActivity"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            />
+
+        <!--
+        <receiver android:name=".InstalledAppReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REPLACED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+        -->
+        <service
+            android:name=".minor.job.service.ArielTimeTaskService"
+            android:enabled="true" />
+        <service
+            android:name=".minor.main.navigation.BdNaviService"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE">
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.accessibilityservice"
+                android:resource="@xml/accessibility_service_config" />
+        </service>
+
+
+        <service
+            android:name=".minor.main.navigation.NotificationMonitorService"
+            android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE">
+            <intent-filter>
+                <action android:name="android.service.notification.NotificationListenerService" />
+            </intent-filter>
+        </service>
+
+
+    <activity
+            android:name="com.qinggan.app.arielapp.minor.music.MusicActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SampleTheme" />
+
+
+        <activity
+            android:name=".BKMusicActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SampleTheme"></activity>
+
+        <activity
+            android:name=".minor.main.welcome.WelcomeActivity"
+            android:theme="@style/SampleTheme" />
+
+        <activity
+            android:name="com.qinggan.app.arielapp.ui.bluekey.TemporaryKeyActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/SampleTheme" />
+
+        <activity
+            android:name="com.qinggan.app.arielapp.ui.bluekey.BindCarSuccessActivity"
+            android:theme="@style/SampleTheme" />
+        <activity
+            android:name="com.qinggan.app.arielapp.ui.bluekey.ForverKeyActivity"
+            android:theme="@style/SampleTheme" />
+        <activity
+            android:name="com.qinggan.app.arielapp.ui.bluekey.CarOwnerKeyActivity"
+            android:theme="@style/SampleTheme" />
+        <activity
+            android:name="com.qinggan.app.arielapp.ui.bluekey.VerfyCarIdentityActivity"
+            android:theme="@style/SampleTheme" />
+        <!--<activity-->
+        <!--android:name=".minor.main.navigation.LastKilometreActivity"-->
+        <!--android:screenOrientation="portrait"-->
+        <!--android:theme="@style/SampleTheme" />-->
+
+
+
+
+        <receiver
+            android:name="com.qinggan.bluekey.util.NotificationClickReceiver">
+        </receiver>
+
+        <receiver
+            android:name="com.qinggan.app.arielapp.phonestate.ReversingRadarReceiver">
+            <intent-filter android:priority="1000">
+                <action android:name="com.qinggan.app.arielapp.radar_open"></action>
+            </intent-filter>
+        </receiver>
+
+        <!--<meta-data-->
+        <!--android:name="com.google.android.actions"-->
+        <!--android:resource="@xml/bd_naivi_service" />-->
+
+    </application>
+
+</manifest>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_marginLeft="30dp"
+    android:background="@color/black"
+    android:gravity="center"
+    android:layout_height="100dp">
+
+    <TextView
+        android:id="@+id/broad_item_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="36sp"
+        android:gravity="center"
+        android:textColor="@color/text_while"
+        android:text="1"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/broad_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:textColor="@color/text_while"
+            android:text="早安 875"
+            />
+
+        <TextView
+            android:id="@+id/broad_item_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:textColor="@color/text_while"
+            android:text="07：00-09:00"
+            />
+    </LinearLayout>
+
+</LinearLayout>

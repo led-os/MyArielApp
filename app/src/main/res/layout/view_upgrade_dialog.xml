@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dp320"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp22"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:textColor="#ffffff"
+        android:text="@string/v8"
+        android:textSize="@dimen/dp18" />
+
+    <TextView
+        android:id="@+id/version"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp20"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/dp18" />
+
+    <TextView
+        android:id="@+id/desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp32"
+        android:layout_marginBottom="@dimen/dp30"
+        android:gravity="left"
+        android:includeFontPadding="false"
+        android:paddingLeft="@dimen/dp28"
+        android:lineSpacingExtra="@dimen/dp10"
+        android:paddingRight="@dimen/dp28"
+        android:textColor="#ffffffff"
+        android:textSize="@dimen/dp13" />
+
+    <View
+        android:id="@+id/horizontal_divider"
+        android:layout_width="match_parent"
+        android:layout_height="0.33dp"
+        android:layout_above="@+id/btns"
+        android:background="#4DFFFFFF" />
+
+    <LinearLayout
+        android:id="@+id/btns"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="0px"
+            android:layout_height="@dimen/dp53"
+            android:layout_weight="1"
+            android:background="@null"
+            android:text="@string/v6"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/dp16" />
+
+        <View
+            android:id="@+id/cancel_confirm_divider"
+            android:layout_width="0.33dp"
+            android:layout_height="@dimen/dp53"
+            android:layout_below="@+id/title"
+            android:background="#4DFFFFFF" />
+
+        <Button
+            android:id="@+id/start"
+            android:layout_width="0px"
+            android:layout_height="@dimen/dp53"
+            android:layout_weight="1"
+            android:background="@null"
+            android:text="@string/v7"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/dp16" />
+    </LinearLayout>
+</LinearLayout>

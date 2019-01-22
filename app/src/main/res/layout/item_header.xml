@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:background="#202021"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/item_title"
+        android:layout_width="@dimen/dp60"
+        android:layout_height="@dimen/dp60"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+        android:background="@drawable/botton_close_click"
+        />
+    <LinearLayout
+        android:id="@+id/down_lay"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="match_parent">
+          <TextView
+              android:id="@+id/ts_txt"
+              android:textSize="@dimen/sp16"
+              android:textColor="#FAFAFA"
+              android:text="@string/down_process"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content" />
+            <ProgressBar
+                android:id="@+id/down_progress"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:progressDrawable="@drawable/pro_bg"
+                android:layout_marginTop="@dimen/dp10"
+                android:progress="100"
+                android:layout_below="@+id/ts_txt"
+                android:layout_width="@dimen/dp88"
+                android:layout_height="@dimen/dp2" />
+    </LinearLayout>
+</RelativeLayout>

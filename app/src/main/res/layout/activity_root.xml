@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3C3C3C"
+    android:orientation="vertical"
+    android:gravity="center"
+>
+
+    <TextView
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_marginTop="50dp"
+        android:text="开启羚机\n需要以下权限"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:textColor="@color/black"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:gravity="center"
+            android:background="@drawable/wihteyuan"
+            android:layout_margin="20dp"
+            android:text="icon"/>
+        <TextView
+            android:textColor="@color/black"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:gravity="center"
+            android:background="@drawable/wihteyuan"
+            android:layout_margin="20dp"
+            android:text="icon"/>
+        <TextView
+            android:textColor="@color/black"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:gravity="center"
+            android:layout_margin="20dp"
+            android:background="@drawable/wihteyuan"
+            android:text="icon"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/sure_btn"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="@drawable/name_bg"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="60dp"
+        android:textSize="16dp"
+        android:textColor="@color/black"
+        android:text="确定"/>
+    <Button
+        android:id="@+id/no_btn"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="@drawable/name_bg"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:textSize="16dp"
+        android:textColor="@color/black"
+        android:text="取消"/>
+</LinearLayout>

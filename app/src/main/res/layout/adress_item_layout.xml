@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dp76"
+    android:gravity="center"
+    android:layout_margin="@dimen/dp6"
+    android:background="@drawable/place_background"
+    android:layout_height="@dimen/dp76">
+   <TextView
+       android:id="@+id/adress_txt"
+       android:layout_width="@dimen/dp64"
+       android:layout_height="@dimen/dp64"
+       android:textSize="@dimen/sp20"
+       android:gravity="center"
+       android:textColor="#ffffff"
+       android:text="家"/>
+</LinearLayout>

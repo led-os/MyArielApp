@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/music_main_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/music_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80000000">
+
+        <RelativeLayout
+            android:id="@+id/music_rl_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="22dp">
+
+            <ImageView
+                android:id="@+id/music_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/back_select" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="音乐"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+
+
+            <com.qinggan.app.widget.voiceLinePulse.LinePulseView
+                android:id="@+id/wakeup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/music_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/music_info"
+            android:layout_below="@id/music_rl_title"
+            android:layout_marginTop="38dp">
+
+            <ImageView
+                android:id="@+id/music_song_bg"
+                android:layout_width="220dp"
+                android:layout_height="220dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="25dp"
+                android:src="@drawable/music_bg_disc"
+
+                />
+
+            <com.joooonho.SelectableRoundedImageView
+                android:id="@+id/music_album_cover"
+                android:layout_width="210dp"
+                android:layout_height="240dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="33dp"
+                android:scaleType="centerCrop"
+                app:sriv_left_bottom_corner_radius="10dip"
+                app:sriv_left_top_corner_radius="10dip"
+                app:sriv_right_bottom_corner_radius="10dip"
+                app:sriv_right_top_corner_radius="10dip" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <ImageView
+                android:id="@+id/music_status_pause"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:background="@drawable/radio_play_status_selector"
+                android:visibility="invisible" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/music_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/music_bottom_rl"
+            android:layout_marginLeft="33dp"
+            android:layout_marginBottom="51dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/song_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Garden Vally"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/song_author"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:text="Tori kelly"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+
+
+            <com.qinggan.app.arielapp.minor.music.MySeekBar
+                android:id="@+id/my_seekbar"
+                android:layout_width="match_parent"
+                android:layout_height="1.5dp"
+                android:layout_marginLeft="-10dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginRight="33dp"
+                android:max="100"
+                android:maxHeight="2dip"
+                android:minHeight="2dip"
+                android:progressDrawable="@drawable/bg_seekbar"
+                android:thumb="@drawable/point" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/all_voice_s" />
+
+                <TextView
+                    android:id="@+id/wakeup_words"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="7dp"
+                    android:text="@string/music_voicewords"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/music_bottom_rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="33dp"
+            android:layout_marginRight="33dp"
+            android:layout_marginBottom="33dp">
+
+            <ImageView
+                android:id="@+id/song_list"
+                android:layout_width="@dimen/dp120"
+                android:layout_height="@dimen/dp120"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/music_button_press"/>
+
+            <ImageView
+                android:id="@+id/song_category"
+                android:layout_width="@dimen/dp120"
+                android:layout_height="@dimen/dp120"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/music_menu_press" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/volume_linear"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/black_alpha_80"
+            android:visibility="gone">
+
+            <com.qinggan.app.arielapp.minor.music.ImitateIphoneSwitch
+                android:id="@+id/volume_profile"
+                android:layout_width="@dimen/sound_width"
+                android:layout_height="@dimen/sound_height"
+                android:layout_centerInParent="true" />
+
+            <ImageView
+                android:id="@+id/vol_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/volune_profile"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dp20"
+                android:background="@mipmap/music_icon_sound" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

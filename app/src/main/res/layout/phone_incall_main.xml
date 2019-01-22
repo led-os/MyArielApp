@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.qinggan.app.arielapp.minor.phone.view.MultiDirectionSlidingDrawer
+        xmlns:my="http://schemas.android.com/apk/res/com.qinggan.app.arielapp"
+        android:id="@+id/drawer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        my:content="@+id/content"
+        my:direction="topToBottom"
+        my:handle="@+id/handle">
+
+        <include
+            android:id="@id/content"
+            layout="@layout/phone_incall" />
+
+        <LinearLayout
+            android:id="@id/handle"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center|bottom"
+            android:background="@drawable/bg_incall_ui">
+            <ImageView
+                android:layout_marginBottom="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/phone_icon_jx" />
+        </LinearLayout>
+
+    </com.qinggan.app.arielapp.minor.phone.view.MultiDirectionSlidingDrawer>
+
+    <TextView
+        android:id="@+id/tv_top_contacts_name"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:text="123"
+        android:textSize="20dp"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:visibility="gone"/>
+
+    <Chronometer
+        android:id="@+id/chronometer_top"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:visibility="gone"/>
+</RelativeLayout>

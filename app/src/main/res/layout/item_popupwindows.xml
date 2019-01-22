@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="#CC000000"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/ll_popup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="@dimen/dp13"
+            android:layout_marginRight="@dimen/dp13"
+            android:background="@drawable/popwindow_bg"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/updateadress"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp51"
+                android:gravity="center"
+                android:text="@string/main_pop_update_adress"
+                android:textColor="#000000"
+                android:textSize="@dimen/sp16"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.4dp"
+                android:background="#BBBBBB" />
+
+
+            <TextView
+                android:id="@+id/deleteadress"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp51"
+                android:gravity="center"
+                android:text="@string/main_pop_delete_adress"
+                android:textColor="#000000"
+                android:textSize="@dimen/sp16"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/item_popupwindows_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp52"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="@dimen/dp13"
+            android:layout_marginTop="@dimen/dp6"
+            android:layout_marginRight="@dimen/dp13"
+            android:layout_marginBottom="@dimen/dp18"
+            android:background="@drawable/popwindow_bg"
+            android:gravity="center"
+            android:text="@string/main_pop_cancel"
+            android:textColor="#000000"
+            android:textSize="@dimen/sp16"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+</RelativeLayout>

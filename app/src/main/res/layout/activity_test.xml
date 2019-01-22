@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:context=".minor.main.mui.TestActivity">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp50"
+            android:layout_margin="20dp"
+            android:background="#BBBBBB"
+            android:gravity="center"
+            android:text="羚机App功能测试界面"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/dp24" />
+
+        <CheckBox
+            android:id="@+id/start_car"
+            style="@style/text_btn_test"
+            android:checked="false"
+            android:text="模拟车机启动"
+            android:textColor="#333333" />
+
+
+        <LinearLayout
+            style="@style/text_btn_test"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:textColor="@android:color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="语音控制车机音量增幅" />
+
+            <EditText
+                android:textColor="@android:color/black"
+                android:id="@+id/voice_increase"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dp10"
+                android:hint="请输入音量增幅"
+                android:inputType="number" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/mic_allway_on"
+            style="@style/text_btn_test"
+            android:text="应用内离车模式手机MIC可用" />
+
+        <Button
+            android:id="@+id/mic_connected"
+            style="@style/text_btn_test"
+            android:text="与车机MIC未连接" />
+
+        <Button
+            android:id="@+id/car_lock_btn"
+            style="@style/text_btn_test"
+            android:text="解锁弹窗"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/nav_btn"
+            style="@style/text_btn_test"
+            android:text="导航功能测试" />
+
+        <Button
+            android:id="@+id/phone_btn"
+            style="@style/text_btn_test"
+            android:layout_width="match_parent"
+            android:text="电话功能测试" />
+
+        <Button
+            android:id="@+id/weixin_btn"
+            style="@style/text_btn_test"
+            android:text="微信功能测试" />
+
+        <Button
+            android:id="@+id/radio_btn"
+            style="@style/text_btn_test"
+            android:text="收音机功能测试" />
+
+        <Button
+            android:id="@+id/hui_btn"
+            style="@style/text_btn_test"
+            android:text="HUI功能测试" />
+
+        <Button
+            android:id="@+id/fangkong_btn"
+            style="@style/text_btn_test"
+            android:text="方控功能测试" />
+
+        <Button
+            android:id="@+id/car_btn"
+            style="@style/text_btn_test"
+            android:text="车控功能测试" />
+
+        <Button
+            android:id="@+id/ble_lock"
+            style="@style/text_btn_test"
+            android:text="BLE解锁" />
+
+        <Button
+            android:id="@+id/ble_unlock"
+            style="@style/text_btn_test"
+            android:text="BLE闭锁" />
+
+
+        <Button
+            android:id="@+id/ble_good_rssi"
+            style="@style/text_btn_test"
+            android:text="BLE近车感应信号值" />
+
+        <Button
+            android:id="@+id/ble_bad_rssi"
+            style="@style/text_btn_test"
+            android:text="BLE离车感应信号值" />
+
+        <Button
+            android:id="@+id/ble_back"
+            style="@style/text_btn_test"
+            android:text="BLE后备箱" />
+
+        <Button
+            android:id="@+id/btn_log"
+            style="@style/text_btn_test"
+            android:text="MainLog保存到目录" />
+
+        <Button
+            android:id="@+id/add_mac_btn"
+            style="@style/text_btn_test"
+            android:text="添加蓝牙mac地址" />
+
+        <Button
+            android:id="@+id/music_text"
+            style="@style/text_btn_test"
+            android:text="BKMusic" />
+
+        <EditText
+            android:id="@+id/mac_text"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp50"
+            android:layout_marginLeft="@dimen/dp30"
+            android:layout_marginTop="@dimen/dp6"
+            android:layout_marginRight="@dimen/dp30"
+            android:hint="字母必须改成大写!!!"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="@dimen/dp18" />
+
+
+        <Button
+            android:id="@+id/add_pin"
+            style="@style/text_btn_test"
+            android:text="设置安全码" />
+
+        <Button
+            android:id="@+id/change_pin"
+            style="@style/text_btn_test"
+            android:text="修改安全码" />
+
+        <Button
+            android:id="@+id/vefi_pin"
+            style="@style/text_btn_test"
+            android:text="验证安全码" />
+
+        <Button
+            android:id="@+id/cerfi"
+            style="@style/text_btn_test"
+            android:text="去实名认证" />
+
+
+        <Button
+            android:id="@+id/ota1"
+            style="@style/text_btn_test"
+            android:text="获取当前ota版本" />
+
+        <Button
+            android:id="@+id/ota2"
+            style="@style/text_btn_test"
+            android:text="检查是否有新版本" />
+
+        <Button
+            android:id="@+id/ota3"
+            style="@style/text_btn_test"
+            android:text="检查当前ota状态" />
+
+        <Button
+            android:id="@+id/ota4"
+            style="@style/text_btn_test"
+            android:text="开始ota升级" />
+
+        <Button
+            android:id="@+id/ota5"
+            style="@style/text_btn_test"
+            android:text="取消ota升级" />
+
+        <Button
+            android:id="@+id/ota9"
+            style="@style/text_btn_test"
+            android:text="获取当前车机版本" />
+
+        <TextView
+            android:id="@+id/ota7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="当前OTA版本"
+            android:textColor="@android:color/holo_red_light" />
+
+        <Button
+            android:id="@+id/ota6"
+            style="@style/text_btn_test"
+            android:text="开始U盘升级" />
+
+        <TextView
+            android:id="@+id/ota8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="升级状态"
+            android:textColor="@android:color/holo_red_light" />
+
+        <Button
+            android:id="@+id/btn_leavecar_navi"
+            style="@style/text_btn_test"
+            android:text="离车模式" />
+
+        <Button
+            android:id="@+id/btn_car_control"
+            style="@style/text_btn_test"
+            android:text="@string/on_car_control" />
+
+    </LinearLayout>
+</ScrollView>

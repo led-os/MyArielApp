@@ -1,0 +1,44 @@
+package com.qinggan.app.arielapp.utils;
+
+/**
+ * <全局免唤醒事件>
+ *
+ * @author NAME:yanguozhu
+ * @version [版本号, 18-12-17]
+ * @see [相关类/方法]
+ * @since [V1]
+ */
+//
+//        5.雨雪模式 ->打开雨雪模式 and 打开下雨模式
+//        6.抽烟模式 ->打开抽烟模式 and 我想抽烟
+public enum AllWakeupEvent {
+    LAST_SONG,
+    NEXT_SONG,
+    PLAY_MUSIC,
+    PAUSE_MUSIC,
+    LAST_FM,
+    NEXT_FM,
+    PLAY_FM,
+    PAUSE_FM,
+    VOLUME_ADD,
+    VOLUME_SUB,
+    CALL_ACCEPT,
+    CALL_REFUSE,
+    WECHAT_REPLY,
+    WECHAT_CANCEL,
+    WECHAT_NEXT_MSG,
+    WECHAT_OPEN_READ_MSG,
+    WECHAT_CLOSE_READ_MSG,
+    VEHICLECONTROL_FIND_CAR,
+    VEHICLECONTROL_WORM_CAR,
+    VEHICLECONTROL_OPEN_SMART_WORM,
+    VEHICLECONTROL_OPEN_SMART_WORM_ALL_CAR,
+    VEHICLECONTROL_OPEN_SMART_CLOD,
+    VEHICLECONTROL_OPEN_SMART_CLOD_ALL_CAR,
+    VEHICLECONTROL_OPEN_SMART_RAIN,
+    VEHICLECONTROL_OPEN_SMART_RAIN_ALL_CAR,
+    VEHICLECONTROL_OPEN_SMART_SMOK,
+    VEHICLECONTROL_OPEN_SMART_SMOK_ALL_CAR,
+    STOP_NAV,
+    BACK_MAIN;
+}

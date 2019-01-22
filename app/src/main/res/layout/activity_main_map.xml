@@ -1,0 +1,889 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.baidu.mapapi.map.TextureMapView
+                android:id="@+id/bmapView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <!---顶部个人中心及驾驶模式按钮-->
+                <LinearLayout
+                    android:id="@+id/ll_head"
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:background="#ffffff"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/head_rl"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp12"
+                        android:gravity="center_vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/_user"
+                                android:layout_width="@dimen/dp36"
+                                android:layout_height="@dimen/dp36"
+                                android:layout_marginLeft="@dimen/dp13"
+                                android:src="@drawable/user_s" />
+
+                            <TextView
+                                android:id="@+id/car_number"
+                                android:layout_width="@dimen/dp78"
+                                android:layout_height="wrap_content"
+                                android:layout_alignRight="@+id/_user"
+                                android:layout_marginLeft="@dimen/dp11"
+                                android:textColor="#000000"
+                                android:text="@string/driving_carnum"
+                                android:textSize="@dimen/sp16" />
+
+                            <View
+                                android:id="@+id/ble_back_door"
+                                android:layout_width="@dimen/dp100"
+                                android:layout_height="@dimen/dp36"
+                                android:background="#00000000" />
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/_car"
+                            android:layout_width="@dimen/dp90"
+                            android:layout_height="@dimen/dp26"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/dp13"
+                            android:background="@drawable/car_btn_click"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:padding="@dimen/dp7">
+
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/search_lay"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp42"
+                        android:layout_marginLeft="@dimen/dp13"
+                        android:layout_marginTop="@dimen/dp22"
+                        android:layout_marginRight="@dimen/dp13"
+                        android:background="@drawable/seach_bg"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="@dimen/dp20"
+                            android:layout_height="@dimen/dp20"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/dp15"
+                            android:layout_marginRight="@dimen/dp16"
+                            android:src="@drawable/icon_search" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/dp45"
+                            android:background="@null"
+                            android:gravity="center_vertical"
+                            android:hint="@string/main_where_go"
+                            android:textSize="@dimen/sp16" />
+
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ble_key_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#E6F4FD"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/dp16"
+                    android:paddingTop="@dimen/dp10"
+                    android:paddingRight="@dimen/dp16"
+                    android:paddingBottom="@dimen/dp10"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icon_update" />
+
+                    <TextView
+                        android:id="@+id/ble_key_tip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp10"
+                        android:layout_weight="1"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:text="升级手机钥匙，获取更多权限"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/ble_key_tip_close"
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="×"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <FrameLayout
+                    android:id="@+id/rf_map"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp290">
+
+
+
+                    <LinearLayout
+                        android:id="@+id/ll_back"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:visibility="visible">
+
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_marginLeft="@dimen/dp13"
+                            android:src="@mipmap/icon_back" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignRight="@+id/_user"
+                            android:layout_marginLeft="@dimen/dp11"
+                            android:gravity="center"
+                            android:paddingTop="@dimen/dp10"
+                            android:paddingBottom="@dimen/dp10"
+                            android:text="寻找我的车"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/sp16" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/car_lay"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp90"
+                        android:layout_marginLeft="@dimen/dp13"
+                        android:layout_marginTop="@dimen/dp4"
+                        android:layout_marginRight="@dimen/dp13"
+                        android:background="@drawable/main_btn_click"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_gravity="bottom"
+                            android:layout_weight="1"
+                            android:background="@drawable/pop_2"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/car_adress"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/dp16"
+                                android:textColor="#FFFFFF"
+                                android:textSize="@dimen/sp14" />
+
+
+                            <TextView
+                                android:id="@+id/car_distance"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="@dimen/dp16"
+                                android:textColor="#FFFFFF"
+                                android:textSize="@dimen/sp14" />
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:id="@+id/notice_lay"
+                                android:layout_width="@dimen/dp0"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+
+                                android:gravity="center_vertical">
+
+                                <ImageView
+                                    android:id="@+id/notice_img"
+                                    android:layout_width="@dimen/dp40"
+                                    android:layout_height="@dimen/dp40"
+                                    android:layout_marginLeft="@dimen/dp13"
+                                    android:background="@drawable/icon_light" />
+
+                                <TextView
+                                    android:id="@+id/notice_txt"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/dp8"
+                                    android:text="@string/main_honking_flash"
+                                    android:textColor="#000000"
+                                    android:textSize="@dimen/sp16" />
+
+                                <ImageView
+                                    android:layout_width="@dimen/dp30"
+                                    android:layout_height="@dimen/dp30"
+                                    android:background="@drawable/home_icon_more"
+                                    android:visibility="gone" />
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:id="@+id/nav_lay"
+                                android:layout_width="@dimen/dp0"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="left">
+
+
+                                <ImageView
+                                    android:id="@+id/nav_img"
+                                    android:layout_width="@dimen/dp40"
+                                    android:layout_height="@dimen/dp40"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="@dimen/dp13"
+                                    android:background="@drawable/icon_guide" />
+
+                                <TextView
+                                    android:id="@+id/nav_txt"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="@dimen/dp8"
+                                    android:text="@string/main_nav_to_car"
+                                    android:textColor="#000000"
+                                    android:textSize="@dimen/sp16" />
+
+                                <ImageView
+                                    android:layout_width="@dimen/dp30"
+                                    android:layout_height="@dimen/dp30"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginRight="@dimen/dp13"
+                                    android:background="@drawable/home_icon_more"
+                                    android:visibility="gone" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </FrameLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_bottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="#fffafafa"
+                    android:gravity="center_vertical"
+                    android:visibility="visible">
+
+
+                    <TextView
+                        android:id="@+id/remote_ca_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp16"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginBottom="@dimen/dp2"
+                        android:text="远程车控"
+                        android:textSize="@dimen/sp16" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp260"
+                        android:background="#ffffff"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dp130"
+                            android:layout_marginLeft="@dimen/dp14"
+                            android:layout_marginRight="@dimen/dp14"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:id="@+id/car_lock_btn"
+                                android:layout_width="@dimen/dp0"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:paddingTop="@dimen/dp6"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/car_lock_img"
+                                    android:layout_width="@dimen/dp72"
+                                    android:layout_height="@dimen/dp72"
+                                    android:background="@drawable/open_lock_select" />
+
+                                <TextView
+                                    android:id="@+id/car_lock_txt"
+                                    style="@style/carStyle"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="26dp"
+                                    android:gravity="center"
+                                    android:layout_marginTop="@dimen/dp1"
+                                    android:text="@string/main_door_locked" />
+                                    <com.qinggan.app.arielapp.ui.widget.LVCircularZoom
+                                        android:visibility="gone"
+                                        android:id="@+id/car_lock_loading"
+                                        android:layout_width="@dimen/dp72"
+                                        android:layout_height="26dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/hot_car"
+                                android:layout_width="@dimen/dp0"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="@dimen/dp1"
+                                android:layout_weight="1"
+                                android:paddingTop="@dimen/dp6"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/hot_car_img"
+                                    android:layout_width="@dimen/dp72"
+                                    android:layout_height="@dimen/dp72"
+                                    android:background="@drawable/hot_car_select" />
+
+                                <TextView
+                                    android:id="@+id/hot_car_txt"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="26dp"
+                                    android:gravity="center"
+                                    android:layout_marginTop="@dimen/dp1"
+                                    style="@style/carStyle"
+                                    android:text="@string/main_hot_car" />
+                                <com.qinggan.app.arielapp.ui.widget.LVCircularZoom
+                                    android:visibility="gone"
+                                    android:id="@+id/hot_car_loading"
+                                    android:layout_width="@dimen/dp72"
+                                    android:layout_height="26dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/trunk"
+                                android:layout_width="@dimen/dp0"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="@dimen/dp1"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:paddingTop="@dimen/dp6"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/trunk_img"
+                                    android:layout_width="@dimen/dp72"
+                                    android:layout_height="@dimen/dp72"
+                                    android:background="@drawable/trunk_img_select" />
+
+                                <TextView
+                                    android:id="@+id/trunk_txt"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="26dp"
+                                    android:gravity="center"                                    android:layout_marginTop="@dimen/dp1"
+                                    style="@style/carStyle"
+                                    android:text="@string/main_unlock_tail_door" />
+                                <com.qinggan.app.arielapp.ui.widget.LVCircularZoom
+                                    android:visibility="gone"
+                                    android:id="@+id/trunk_loading"
+                                    android:layout_width="@dimen/dp72"
+                                    android:layout_height="26dp" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dp130"
+                            android:layout_marginLeft="@dimen/dp14"
+                            android:layout_marginRight="@dimen/dp14"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:id="@+id/warmth"
+                                android:layout_width="@dimen/dp0"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:paddingBottom="@dimen/dp10"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/warmth_img"
+                                    android:layout_width="@dimen/dp72"
+                                    android:layout_height="@dimen/dp72"
+                                    android:background="@drawable/warmth_img_select" />
+
+                                <TextView
+                                    android:id="@+id/warmth_txt"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="26dp"
+                                    android:gravity="center"                                    android:layout_marginTop="@dimen/dp1"
+                                    style="@style/carStyle"
+                                    android:text="@string/main_warmth" />
+                                <com.qinggan.app.arielapp.ui.widget.LVCircularZoom
+                                    android:visibility="gone"
+                                    android:id="@+id/warmth_loading"
+                                    android:layout_width="@dimen/dp72"
+                                    android:layout_height="26dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/cool"
+                                android:layout_width="@dimen/dp0"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="@dimen/dp1"
+                                android:paddingBottom="@dimen/dp10"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/cool_img"
+                                    android:layout_width="@dimen/dp72"
+                                    android:layout_height="@dimen/dp72"
+                                    android:background="@drawable/cool_img_select" />
+
+                                <TextView
+                                    android:id="@+id/cool_txt"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="26dp"
+                                    android:gravity="center"                                    android:layout_marginTop="@dimen/dp1"
+                                    style="@style/carStyle"
+                                    android:text="@string/main_cool" />
+                                <com.qinggan.app.arielapp.ui.widget.LVCircularZoom
+                                    android:visibility="gone"
+                                    android:id="@+id/cool_loading"
+                                    android:layout_width="@dimen/dp72"
+                                    android:layout_height="26dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/window"
+                                android:layout_width="@dimen/dp0"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="@dimen/dp1"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:paddingBottom="@dimen/dp10">
+
+                                <ImageView
+                                    android:id="@+id/window_img"
+                                    android:layout_width="@dimen/dp72"
+                                    android:layout_height="@dimen/dp72"
+                                    android:background="@drawable/window_img_select" />
+
+                                <TextView
+                                    android:id="@+id/window_txt"
+                                    style="@style/carStyle"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="26dp"
+                                    android:gravity="center"                                    android:layout_marginTop="@dimen/dp1"
+                                    android:text="@string/main_one_close_window" />
+                                <com.qinggan.app.arielapp.ui.widget.LVCircularZoom
+                                    android:visibility="gone"
+                                    android:id="@+id/window_loading"
+                                    android:layout_width="@dimen/dp72"
+                                    android:layout_height="26dp" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/journey_lay"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp80"
+                        android:layout_marginTop="@dimen/dp13"
+                        android:gravity="center_vertical"
+                        android:background="#ffffff"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/plase_icon"
+                            android:layout_width="@dimen/dp40"
+                            android:layout_height="@dimen/dp40"
+                            android:layout_marginLeft="@dimen/dp13"
+                            android:background="@drawable/icon_plan" />
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="@dimen/dp11"
+                                android:textColor="#000000"
+                                android:text="@string/main_have"
+                                android:textSize="@dimen/sp16" />
+
+                            <TextView
+                                android:id="@+id/iv_route"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="@dimen/dp11"
+                                android:text="@string/main_have_num"
+                                android:layout_marginTop="@dimen/dp4"
+                                android:textColor="#9B9B9B"
+                                android:textSize="@dimen/sp14" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:layout_gravity="right"
+                            android:gravity="center_vertical">
+                            <TextView
+                                android:id="@+id/update_txt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/sp14"
+                                android:text="@string/update_txt"
+                                android:textColor="#9B9B9B"/>
+                            <ImageView
+                                android:layout_width="@dimen/dp30"
+                                android:layout_height="@dimen/dp40"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginRight="@dimen/dp13"
+                                android:background="@drawable/icon_more" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/oil_lay"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp80"
+                        android:layout_marginTop="@dimen/dp1"
+                        android:background="#ffffff"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/oil_img"
+                            android:layout_width="@dimen/dp40"
+                            android:layout_height="@dimen/dp40"
+                            android:layout_marginLeft="@dimen/dp13"
+                            android:background="@drawable/icon_gas" />
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:gravity="bottom">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="@dimen/dp13"
+                                    android:gravity="center"
+                                    android:textColor="#000000"
+                                    android:text="@string/main_endurance_mileage"
+                                    android:textSize="@dimen/sp16" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginRight="@dimen/dp13"
+                                    android:gravity="center"
+                                    android:text="@string/main_lc"
+                                    android:textSize="@dimen/sp18" />
+
+
+                            </RelativeLayout>
+
+                            <ProgressBar
+                                android:id="@+id/remaining_pb"
+                                style="@android:style/Widget.ProgressBar.Horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/dp8"
+                                android:layout_marginLeft="@dimen/dp13"
+                                android:layout_marginRight="@dimen/dp13"
+                                android:layout_marginBottom="@dimen/dp22"
+                                android:progress="40"
+                                android:progressDrawable="@drawable/pro_bg" />
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:layout_gravity="right"
+                            android:layout_marginLeft="@dimen/dp26"
+                            android:gravity="center_vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/go_oil"
+                                android:textColor="#9B9B9B"
+                                android:textSize="@dimen/sp14" />
+                            <ImageView
+                                android:layout_width="@dimen/dp30"
+                                android:layout_height="@dimen/dp40"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginRight="@dimen/dp13"
+                                android:background="@drawable/icon_more" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/buletooth_car_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp16"
+                        android:layout_marginTop="@dimen/dp2"
+                        android:layout_marginBottom="@dimen/dp2"
+                        android:text="蓝牙车控"
+                        android:textColor="#FFFFFF"
+                        android:textSize="@dimen/sp16" />
+
+                    <LinearLayout
+                        android:id="@+id/buletooth_car_lay"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp13"
+                        android:layout_marginTop="@dimen/dp13"
+                        android:layout_marginRight="@dimen/dp13"
+                        android:layout_marginBottom="@dimen/dp13"
+                        android:background="@drawable/seach_bg"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dp0"
+                            android:layout_marginTop="@dimen/dp1"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:id="@+id/ble_car_unlock_btn"
+                                android:layout_width="@dimen/dp0"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/bt_1zs_1"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/ble_car_unlock_img"
+                                    android:layout_width="@dimen/dp45"
+                                    android:layout_height="@dimen/dp45"
+                                    android:background="@drawable/ble_unlock" />
+
+                                <TextView
+                                    android:id="@+id/ble_car_unlock_txt"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/dp10"
+                                    android:text="解锁车门" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/ble_lock_car_btn"
+                                android:layout_width="@dimen/dp0"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="@dimen/dp1"
+                                android:layout_weight="1"
+                                android:background="@drawable/bt_2z_1"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/ble_lock_car_img"
+                                    android:layout_width="@dimen/dp45"
+                                    android:layout_height="@dimen/dp45"
+                                    android:background="@drawable/ble_lock" />
+
+                                <TextView
+                                    android:id="@+id/ble_lock_car_txt"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/dp10"
+                                    android:text="关闭车门" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/ble_trunk"
+                                android:layout_width="@dimen/dp0"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="@dimen/dp1"
+                                android:layout_weight="1"
+                                android:background="@drawable/bt_3ys_1"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/ble_trunk_img"
+                                    android:layout_width="@dimen/dp45"
+                                    android:layout_height="@dimen/dp45"
+                                    android:background="@drawable/ble_backdoor" />
+
+                                <TextView
+                                    android:id="@+id/ble_trunk_txt"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/dp10"
+                                    android:text="解锁尾门" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dp0"
+                            android:layout_marginTop="@dimen/dp1"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:id="@+id/blue_window"
+                                android:layout_width="@dimen/dp0"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/bt_4zx_1"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/blue_window_img"
+                                    android:layout_width="@dimen/dp45"
+                                    android:layout_height="@dimen/dp45"
+                                    android:background="@drawable/blue_window" />
+
+                                <TextView
+                                    android:id="@+id/blue_window_txt"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/dp10"
+                                    android:text="打开车窗" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/blue_air"
+                                android:layout_width="@dimen/dp0"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="@dimen/dp1"
+                                android:layout_weight="1"
+                                android:background="@drawable/bt_2z_1"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/blue_air_img"
+                                    android:layout_width="@dimen/dp45"
+                                    android:layout_height="@dimen/dp45"
+                                    android:background="@drawable/blue_air" />
+
+                                <TextView
+                                    android:id="@+id/blue_air_txt"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/dp10"
+                                    android:text="打开空调" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/blue_sky"
+                                android:layout_width="@dimen/dp0"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="@dimen/dp1"
+                                android:layout_weight="1"
+                                android:background="@drawable/bt_5yx_1"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/blue_sky_img"
+                                    android:layout_width="@dimen/dp45"
+                                    android:layout_height="@dimen/dp45"
+                                    android:background="@drawable/blue_skywindow" />
+
+                                <TextView
+                                    android:id="@+id/blue_sky_txt"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/dp10"
+                                    android:text="打开天窗" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </ScrollView>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/driver"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000000"
+        android:visibility="invisible"/>
+
+
+</FrameLayout>

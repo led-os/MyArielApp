@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/proliner"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@mipmap/mode_bg_normal"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="20dp"
+    android:gravity="center"
+    android:layout_height="200dp">
+
+    <ImageView
+        android:id="@+id/profile_image_item"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@mipmap/qingjingmoshi"/>
+
+    <TextView
+        android:id="@+id/profile_image_tv"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="@dimen/dp10"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:textColor="@color/text_while"
+        android:text="测试"
+        />
+
+</LinearLayout>

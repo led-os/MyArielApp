@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ratingbar="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scenic_root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/nav_detail_layout_top"
+    android:paddingLeft="@dimen/nav_deatil_layout_left"
+    android:paddingRight="@dimen/nav_detail_layout_right"
+    android:background="@drawable/voice_nav_detail_shape"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="@dimen/nav_detail_line_width"
+        android:layout_height="@dimen/nav_detail_line_height"
+        android:layout_marginTop="@dimen/nav_detail_line_top"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/voice_nav_backview_shape"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/nav_detail_name_left"
+        android:layout_marginTop="@dimen/nav_deatil_name_top"
+        android:id="@+id/scenic_detail_name"
+        android:textSize="@dimen/nav_detail_name_text_size"
+        android:textColor="@color/white"
+        android:lines="1"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/nav_detail_address_left"
+        android:layout_marginTop="@dimen/nav_detail_address_top"
+        android:id="@+id/scenic_detail_address"
+        android:textSize="@dimen/nav_detail_address_text_size"
+        android:textColor="@color/white"
+        android:lines="1"/>
+
+    <com.qinggan.app.widget.custom.StarBar
+        android:id="@+id/scenic_detail_star"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/nav_detail_star_left"
+        android:layout_marginTop="@dimen/nav_deatil_star_top"
+        ratingbar:starCount="5"
+        ratingbar:starDistance="@dimen/nav_detail_star_span"
+        ratingbar:starEmpty="@drawable/star_empty"
+        ratingbar:starFill="@drawable/star_full"
+        ratingbar:starSize="@dimen/nav_detail_star_size" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/nav_detail_price_left"
+        android:layout_marginTop="@dimen/nav_detail_price_top">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/scenic_detail_distance"
+            android:textColor="@color/white"
+            android:textSize="@dimen/nav_detail_distance_text_size"
+            android:lines="1"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/nav_detail_pic_height"
+        android:layout_marginTop="@dimen/nav_detail_pic_top"
+        android:id="@+id/scenic_detail_pic"
+        android:scaleType="centerCrop"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/nav_detail_phone_height"
+        android:layout_marginTop="@dimen/nav_detail_phone_top"
+        android:id="@+id/scenic_detail_description_layout"
+        android:background="@drawable/voice_nav_call_shape"
+        android:visibility="gone">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/scenic_detail_description_text"
+            android:maxLines="3"
+            android:textColor="@color/white"
+            android:textSize="@dimen/nav_detail_distance_text_size"
+            android:gravity="left"
+            />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/nav_detail_fav_left"
+        android:layout_marginRight="@dimen/nav_detail_fav_right"
+        android:layout_marginTop="@dimen/nav_detail_fav_top">
+        <ImageView
+            android:layout_width="@dimen/nav_detail_fav_size"
+            android:layout_height="@dimen/nav_detail_fav_size"
+            android:background="@drawable/nav_fav_icon"
+            android:id="@+id/scenic_detail_fav"/>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:layout_width="@dimen/nav_detail_start_size"
+            android:layout_height="@dimen/nav_detail_start_size"
+            android:background="@drawable/nav_start_icon"
+            android:id="@+id/scenic_detail_navi"/>
+    </LinearLayout>
+
+</LinearLayout>

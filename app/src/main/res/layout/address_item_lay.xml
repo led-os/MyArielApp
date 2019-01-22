@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+    <com.yanzhenjie.recyclerview.swipe.SwipeMenuLayout
+        xmlns:swipe="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        swipe:contentViewId="@+id/add_home_lay"
+        swipe:rightViewId="@+id/btn_delete_lay">
+        <RelativeLayout
+            android:background="?android:attr/selectableItemBackground"
+            android:id="@+id/add_home_lay"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="88dp">
+
+            <TextView
+                android:id="@+id/adapter_name"
+                android:layout_marginLeft="33.33dp"
+                android:layout_marginTop="26.67dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="家"
+                android:ellipsize="end"
+                android:lines="1"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                />
+            <TextView
+                android:id="@+id/adapter_address"
+                android:ellipsize="end"
+                android:layout_marginTop="60.67dp"
+                android:layout_marginLeft="33.33dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="未设置"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                />
+        </RelativeLayout>
+        <LinearLayout
+            android:gravity="center"
+            android:id="@+id/btn_delete_lay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_marginRight="33.33dp"
+                android:id="@+id/btn_delete"
+                android:layout_width="73.33dp"
+                android:layout_height="40dp"
+                android:background="@drawable/address_del_btn_select"
+                android:text="删除"
+                android:textSize="20sp"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+
+    </com.yanzhenjie.recyclerview.swipe.SwipeMenuLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_marginRight="33.33dp"
+        android:layout_marginLeft="33.33dp"
+        android:layout_height="1px"
+        android:background="@color/mine_lines_color"
+        />
+</LinearLayout>

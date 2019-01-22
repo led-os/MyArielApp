@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tv_nav_number"
+        android:text="10"
+        android:textSize="@dimen/sp20"
+        android:layout_marginLeft="@dimen/dp24"
+        android:layout_marginTop="@dimen/dp32"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/dp24">
+
+        <TextView
+            android:id="@+id/tv_nav_name"
+            android:text="南京"
+            android:textSize="20sp"
+            android:layout_marginTop="@dimen/dp32"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_nav_address"
+            android:text="南京市总统府"
+            android:textColor="#4dffffff"
+            android:textSize="@dimen/sp12"
+            android:layout_marginTop="@dimen/dp12"
+            android:layout_marginBottom="@dimen/dp4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

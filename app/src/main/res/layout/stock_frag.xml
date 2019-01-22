@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bind="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="event"
+            type="android.view.View.OnClickListener" />
+
+        <variable
+            name="bean"
+            type="com.qinggan.app.voiceapi.bean.common.StockBean" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:onClick="@{event.onClick}"
+            android:layout_marginLeft="42px"
+            android:layout_marginTop="42px"
+            android:layout_width="80px"
+            android:layout_height="80px"
+            android:src="@drawable/voice_colse" />
+
+        <include
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/stock_data"
+            layout="@layout/stock_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            bind:bean="@{bean}" />
+
+    </RelativeLayout>
+
+</layout>

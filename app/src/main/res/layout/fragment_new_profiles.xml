@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_chat"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/black"
+    android:layout_height="match_parent"
+    tools:ignore="MissingDefaultResource">
+
+    <RelativeLayout
+        android:id="@+id/relat_top"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="17dp"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/delete_image"
+                    android:layout_width="@dimen/dp25"
+                    android:layout_height="@dimen/dp25"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp30"
+                    android:src="@drawable/back_select"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="24sp"
+                    android:layout_centerInParent="true"
+                    android:text="情景模式"/>
+
+                <ImageView
+                    android:id="@+id/music_icon"
+                    android:layout_width="@dimen/dp45"
+                    android:layout_height="@dimen/dp45"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/dp30"
+                    android:src="@mipmap/all_voice_s"
+                    />
+            </RelativeLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_marginTop="@dimen/dp10"
+                android:id="@+id/recycle_profile"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/text_profiles"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp20"
+                android:layout_marginLeft="@dimen/dp20"
+                android:gravity="center"
+                android:text="试试说:"
+                android:textColor="@color/text_while"
+                android:drawableLeft="@mipmap/all_voice_s"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp5"
+                android:layout_marginLeft="@dimen/dp60"
+                android:layout_marginRight="@dimen/dp20"
+                android:text="下雨了、下雪了、打开抽烟模式、太热了、车里好冷、一键清凉、一键温暖"
+                android:textColor="@color/text_while"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

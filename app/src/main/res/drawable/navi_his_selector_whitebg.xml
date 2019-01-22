@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<selector xmlns:android = "http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true" android:drawable = "@drawable/navi_history_icon_press" />
+    <!-- 定义按钮默认的图片 -->
+    <item android:drawable = "@drawable/navi_history_icon_nomal" />
+</selector>

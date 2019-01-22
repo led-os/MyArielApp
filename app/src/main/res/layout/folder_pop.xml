@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/folderBackground"
+    android:layout_width="match_parent"
+    android:gravity="bottom"
+    android:background="@drawable/music_black_shape"
+    android:layout_height="500dp">
+
+    <LinearLayout
+        android:id="@+id/ll_bg"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="500dp">
+
+        <RelativeLayout
+            android:id="@+id/closd_music"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/dp30"
+            android:layout_gravity="center_vertical"
+            android:layout_height="60dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:text="菜单"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:layout_toLeftOf="@+id/iv"
+                android:text="收起"
+                />
+
+            <ImageView
+                android:id="@+id/iv"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/music_close_select"
+                />
+        </RelativeLayout>
+        <View
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_width="match_parent"
+            android:background="@color/black"
+            android:layout_height="1dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:id="@+id/music_local"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:layout_height="170dp">
+
+                    <ImageView
+                        android:id="@+id/local_image"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:src="@drawable/music_local_select"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:textSize="16sp"
+                        android:gravity="center"
+                        android:textColor="@color/text_while"
+                        android:text="本地歌曲"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/play_history"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:layout_height="170dp">
+
+                    <ImageView
+                        android:id="@+id/new_image"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:src="@drawable/music_newsong_select"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:textSize="16sp"
+                        android:gravity="center"
+                        android:textColor="@color/text_while"
+                        android:text="新歌榜"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:id="@+id/music_like"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:layout_height="170dp">
+
+                    <ImageView
+                        android:id="@+id/like_image"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:src="@drawable/music_like_select"/>
+
+                    <TextView
+                        android:id="@+id/profile_image_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:textSize="16sp"
+                        android:gravity="center"
+                        android:textColor="@color/text_while"
+                        android:text="我喜欢"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/music_win"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:layout_height="170dp">
+
+                    <ImageView
+                        android:id="@+id/popular_image"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:src="@drawable/music_win_select"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:textSize="16sp"
+                        android:gravity="center"
+                        android:textColor="@color/text_while"
+                        android:text="流行巅峰榜"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
